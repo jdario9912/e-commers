@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura | Geek</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka:wght@500&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header/header-imagen.css">
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1 class="header__titulo">
-            <img class="header__imagen" src="./assets/img/logo.png" alt="logo geek">
+            <div class="header__imagen"></div>
         </h1>
-        <button class="header__btn">Login</button>
-        <input class="header__buscar" type="text" name="buscar" id="buscar" value="">
+        <a class="header__login">Login</a>
+        <div class="header__buscar">
+            <span class="header__lupa"></span>
+            <input class="header__buscar-input" type="text" name="buscar" id="buscar" hidden>
+        </div>
     </header>
     <main>
         <section class="banner">
@@ -49,7 +55,85 @@
                 <a href="#" class="producto__mas">ver producto</a>
             </div>
         </section>
+        <section class="consolas">
+            <h2 class="sec__titulo">consolas</h2>
+            <a href="#" class="sec__mas">ver todo</a>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+        </section>
+        <section class="diversos">
+            <h2 class="sec__titulo">diversos</h2>
+            <a href="#" class="sec__mas">ver todo</a>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <div class="producto__imagen"></div>
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer__nosotros">
+            <div class="footer__titulo"></div>
+            <nav class="footer__nav">
+                <ul class="footer__lista">
+                    <li class="footer__item"><a href="#" class="footer__link">Quienes somos</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Nuestras tiendas</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Quiero una franquicia</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Anúncia aquí</a></li>
+                </ul>
+            </nav>
+            <form action="" class="footer__formulario">
+                <input type="text" class="footer__input-nombre">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="footer__mensaje"></textarea>
+                <button class="footer__btn">Enviar mensaje</button>
+            </form>
+        </div>
+        <div class="footer__info">
+            <p class="footer__parrafo">&#169 Copyrigth | Creado por <em>Joel</em></p>
+        </div>
+    </footer>
 </body>
 </html>

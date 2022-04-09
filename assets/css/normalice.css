@@ -1,0 +1,16 @@
+:root{
+    /* Fonts */
+    --raleway: 'Raleway', sans-serif;
+
+    /* Color */
+    --azul100: #2A7AE4;
+    --preto: #464646;
+
+    /* Background */
+    --blanco: #E5E5E5;
+    --azul10: #EAF2FD;
+}
+
+.container{
+    width: 100%;
+}

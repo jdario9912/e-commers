@@ -1,0 +1,5 @@
+.header__imagen{
+    background: url(../../img/logo.png) no-repeat center / cover;
+    width: 30%;
+    height: 20px;
+}
