@@ -1,0 +1,12 @@
+.header__logo-titulo, .header__logo-titulo{
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.header__logo-titulo{
+
+}
+
+.header__logo-alura{
+    color: var(--azul100)
+}

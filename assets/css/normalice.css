@@ -11,6 +11,12 @@
     --azul10: #EAF2FD;
 }
 
+*{
+    font-family: var(--raleway);
+}
+
 .container{
     width: 100%;
+    color: var(--preto);
 }
+
