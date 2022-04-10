@@ -15,8 +15,12 @@
     font-family: var(--raleway);
 }
 
+.body{
+    background-color: var(--blanco);
+    color: var(--preto);
+}
+
 .container{
     width: 100%;
-    color: var(--preto);
 }
 
