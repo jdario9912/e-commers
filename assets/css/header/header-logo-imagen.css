@@ -1,0 +1,5 @@
+.header__logo-imagen{
+    background: url(../../img/logo.svg) no-repeat center / cover;
+    width: 30%;
+    height: 20px;
+}
