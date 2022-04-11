@@ -1,0 +1,8 @@
+.banner__link{
+    color: var(--blanco);
+    background: var(--azul100);
+    font-size: .88rem;
+    padding: .7rem;
+    text-transform: capitalize;
+    width: 5.5rem;
+}
