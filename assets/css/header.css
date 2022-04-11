@@ -1,5 +1,5 @@
-.header__logo{
+.header{
     align-items: center;
     display: flex;
-    margin: 1rem;
+    justify-content: space-between;
 }

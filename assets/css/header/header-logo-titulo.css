@@ -1,10 +1,5 @@
 .header__logo-titulo, .header__logo-titulo{
-    font-weight: 800;
     text-transform: capitalize;
-}
-
-.header__logo-titulo{
-    /* width: 70%; */
 }
 
 .header__logo-alura{

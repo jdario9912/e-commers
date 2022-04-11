@@ -1,6 +1,7 @@
 :root{
     /* Fonts */
     --raleway: 'Raleway', sans-serif;
+    --dosis: 'Dosis', sans-serif;
 
     /* Color */
     --azul100: #2A7AE4;
@@ -12,12 +13,13 @@
 }
 
 *{
-    font-family: var(--raleway);
+    font-weight: 500;
 }
 
 .body{
     background-color: var(--blanco);
     color: var(--preto);
+    font-family: var(--dosis);
 }
 
 .container{
