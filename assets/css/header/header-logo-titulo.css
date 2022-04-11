@@ -1,5 +1,6 @@
 .header__logo-titulo, .header__logo-titulo{
     text-transform: capitalize;
+    font-family: var(--raleway);
     font-weight: 900;
 }
 

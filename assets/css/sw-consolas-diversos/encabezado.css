@@ -1,6 +1,4 @@
-.header{
-    align-items: center;
+.encabezado{
     display: flex;
     justify-content: space-between;
-    padding: .95rem;
 }
