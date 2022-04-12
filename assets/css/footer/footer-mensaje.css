@@ -1,0 +1,6 @@
+.footer__mensaje{
+    background: var(--blanco);
+    border: none;
+    font-weight: 400;
+    height: 7rem;
+}

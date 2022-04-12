@@ -1,0 +1,6 @@
+.footer__lista{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}

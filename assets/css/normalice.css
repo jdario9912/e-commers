@@ -6,6 +6,7 @@
     /* Color */
     --azul100: #2A7AE4;
     --preto: #464646;
+    --preto50: #A2A2A2;
     --blanco: #E5E5E5;
 
     /* Background */
@@ -23,6 +24,6 @@
     font-family: var(--dosis);
 }
 
-.star-wars, .consolas, .diversos{
+.star-wars, .consolas, .diversos, .footer, .rodapie{
     padding: 1rem;
 }

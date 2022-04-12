@@ -1,0 +1,9 @@
+.footer__label-nombre, .footer__label-mensaje{
+    background: var(--blanco);
+    border-bottom: 1px solid var(--preto50);
+    color: var(--preto50);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: .8rem;
+}

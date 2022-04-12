@@ -1,0 +1,12 @@
+.rodapie{
+    align-items: center;
+    background: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+
+.rodapie__nombre{
+    color: var(--azul100);
+    font-weight: 600;
+    font-family: var(--raleway);
+}

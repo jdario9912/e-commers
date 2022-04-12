@@ -1,0 +1,6 @@
+.footer__input-nombre{
+    background: var(--blanco);
+    border: none;
+    font-weight: 400;
+    height: 1.5rem;
+}

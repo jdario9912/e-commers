@@ -1,9 +1,9 @@
-.header__logo-titulo, .header__logo-titulo{
+.logo-titulo{
     text-transform: capitalize;
     font-family: var(--raleway);
     font-weight: 900;
 }
 
-.header__logo-alura{
+.logo-alura{
     color: var(--azul100);
 }

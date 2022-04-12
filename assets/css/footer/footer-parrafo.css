@@ -1,0 +1,5 @@
+.footer__parrafo{
+    align-self: flex-start;
+    font-family: var(--raleway);
+    font-weight: 600;
+}

@@ -1,0 +1,5 @@
+.footer__link{
+    color: var(--preto);
+    font-weight: 600;
+    line-height: 2rem;
+}
