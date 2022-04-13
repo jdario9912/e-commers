@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="./assets/css/logo.css">
     <link rel="stylesheet" href="./assets/css/logo/logo-imagen.css">
     <link rel="stylesheet" href="./assets/css/logo/logo-titulo.css">
-    <link rel="stylesheet" href="./assets/css/buscar.css">
-    <link rel="stylesheet" href="./assets/css/buscar/buscar-input.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/header/header-form.css">
     <link rel="stylesheet" href="./assets/css/header/header-login.css">
-    <link rel="stylesheet" href="./assets/css/header/header-lupa.css">
-    <link rel="stylesheet" href="./assets/css/header/header-buscar-input.css">
+    <link rel="stylesheet" href="./assets/css/header/header-input.css">
+    <link rel="stylesheet" href="./assets/css/header/header-btn.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/banner/banner-titulo.css">
     <link rel="stylesheet" href="./assets/css/banner/banner-parrafo.css">
@@ -43,22 +42,22 @@
     <link rel="stylesheet" href="./assets/css/label.css">
     <link rel="stylesheet" href="./assets/css/rodapie.css">
     <link rel="stylesheet" href="./assets/css/display-none.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body class="body">
-    ahora pude crear la rama gh-pages
     <header class="header">
-        <div class="logo">
-            <div class="logo-imagen"></div>
-            <h1 class="logo-titulo">
-                <em class="logo-alura">alura </em>geek
-            </h1>
-        </div>
-        <a class="header__login" href="#" target="_blank">Login</a>
-        <div class="header__lupa" data-lupa></div>
+            <div class="logo">
+                <div class="logo-imagen"></div>
+                <h1 class="logo-titulo">
+                    <em class="logo-alura">alura </em>geek
+                </h1>
+            </div>
+            <a class="header__login" href="#" target="_blank">Login</a>
+            <form class="header__formulario" action="">
+                <input class="header__input" type="text" name="buscar" id="buscar" hidden>
+                <button class="header__btn"></button>
+            </form>
     </header>
-    <div data-buscar>
-        <input class="display__none" type="text" name="buscar" id="buscar" data-input-buscar>
-    </div>
     <main>
         <section class="banner">
             <h2 class="banner__titulo">Abril promocional</h2>

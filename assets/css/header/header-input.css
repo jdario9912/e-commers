@@ -1,0 +1,6 @@
+.header__input{
+    border: none;
+    font-family: var(--dosis);
+    width: 0;
+    background: var(--blanco);
+}
