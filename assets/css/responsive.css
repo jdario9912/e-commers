@@ -1,4 +1,8 @@
 @media only screen and (min-width: 768px) {
+    .banner, .star-wars, .consolas, .diversos, .footer, .rodapie{
+        padding: 2rem;
+    }
+
     .header__login{
         order: 1;
     }
@@ -16,7 +20,33 @@
         margin: 1rem 0;
     }
 
+    .producto{
+        max-width: 164px;
+    }
+
     .footer{
         flex-direction: row;
+    }
+
+    .footer__nosotros{
+        align-items: flex-start;
+        width: 40%;
+    }
+
+    .footer__lista{
+        align-items: flex-start;
+    }
+
+    .footer__link{
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+
+    .footer__formulario{
+        width: 59%;
+    }
+
+    .footer__btn{
+        align-self: flex-start;
     }
 }
