@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/css/header/header-login.css">
     <link rel="stylesheet" href="./assets/css/header/header-input.css">
     <link rel="stylesheet" href="./assets/css/header/header-btn.css">
+    <link rel="stylesheet" href="./assets/css/header/header-lupa.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/banner/banner-titulo.css">
     <link rel="stylesheet" href="./assets/css/banner/banner-parrafo.css">
@@ -55,8 +56,9 @@
             <a class="header__login" href="#" target="_blank">Login</a>
             <form class="header__formulario" action="">
                 <input class="header__input" type="text" name="buscar" id="buscar" hidden>
-                <button class="header__btn"></button>
+                <button class="header__btn" hidden></button>
             </form>
+            <div class="header__lupa"></div>
     </header>
     <main>
         <section class="banner">
@@ -179,8 +181,9 @@
                     <li class="footer__item"><a href="#" class="footer__link">Anúncia aquí</a></li>
                 </ul>
             </nav>
-            <p class="footer__parrafo">Hable con nosotros</p>
-            <form action="" class="footer__formulario">
+        </div>
+        <form action="" class="footer__formulario">
+                <p class="footer__parrafo">Hable con nosotros</p>
                 <label class="footer__label-nombre" for="nombre">
                     Nombre:
                     <input type="text" class="footer__input-nombre" id="nombre" name="nombre">
@@ -191,7 +194,6 @@
                 </label>
                 <button class="footer__btn">Enviar mensaje</button>
             </form>
-        </div>
     </footer>
     <section class="rodapie">
         <p class="rodapie__parrafo">&#169 Copyrigth <time>2022</time> | Creado por <em class="rodapie__nombre">Joel</em></p>

@@ -18,3 +18,16 @@
 //     inputBuscar.classList.toggle('display__none');
 //     inputBuscar.classList.toggle('buscar-input');
 // });
+
+
+// window.addEventListener('resize', () => {
+//     const orientacionPantalla = window.screen.orientation;
+//     console.log(orientacionPantalla);
+    
+// });
+
+// window.addEventListener('orientationchange', () => {
+//     const orientacionPantalla = window.screen.orientation.angle;
+//     console.log(orientacionPantalla);
+    
+// });
