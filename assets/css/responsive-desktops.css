@@ -1,0 +1,33 @@
+@media only screen and (min-width: 992px) {
+    .header, .banner, .star-wars, .consolas, .diversos, .footer, .rodapie{
+        padding: 1.8rem 9rem;
+    }
+
+    .footer{
+        justify-content: space-between;   
+        align-items: flex-start;     
+    }
+
+    .footer__nosotros{
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .footer-logo{
+        margin-top: 2rem;
+    }
+
+    .footer__lista{
+        align-items: flex-start;
+        margin: 0 0;
+    }
+
+    .footer__link{
+        line-height: 2.5rem;
+    }
+
+    .footer__formulario{
+        margin-top: 1rem;
+        width: 47%;
+    }
+}
