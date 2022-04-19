@@ -1,5 +1,5 @@
 .banner{
-    background: url(../img/banner/banner.png) no-repeat center / cover;
+    background: url(../../img/banner/banner.png) no-repeat center / cover;
     color: var(--blanco);
     display: flex;
     flex-direction: column;

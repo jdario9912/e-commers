@@ -1,0 +1,21 @@
+/* 
+    Estas media querys tengo que poder manejarlas con js
+*/
+
+/* @media only screen and (max-width: 344px) {
+    .header__lupa{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .header__lupa{
+        display: none;
+    }
+} */
+
+
+/* CONFIGURAR EL SITIO PARA QUE CON UN MAXIMO DE 360wv: 
+    - EL FORMULARIO ESTE SIEMPRE VISIBLE 
+    - EL FORMULARIO SE ESCONDA AL HACER SCROL HACIA ABAJO
+*/
