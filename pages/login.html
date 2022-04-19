@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura | Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka:wght@500&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Dosis&family=Fredoka:wght@500;700&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/normalice.css">
+    <link rel="stylesheet" href="../assets/css/logo.css">
+    <link rel="stylesheet" href="../assets/css/logo/logo-imagen.css">
+    <link rel="stylesheet" href="../assets/css/logo/logo-titulo.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/header/header-form.css">
+    <link rel="stylesheet" href="../assets/css/header/header-login.css">
+    <link rel="stylesheet" href="../assets/css/header/header-input.css">
+    <link rel="stylesheet" href="../assets/css/header/header-btn.css">
+    <link rel="stylesheet" href="../assets/css/header/header-lupa.css">
+    <!-- Aca van las rutas de las estilos para esta pagina -->
+    <link rel="stylesheet" href="../assets/css/login/formulario.css">
+    <link rel="stylesheet" href="../assets/css/login/formulario/formulario-titulo.css">
+    <link rel="stylesheet" href="../assets/css/login/formulario/formulario-label.css">
+    <link rel="stylesheet" href="../assets/css/login/formulario/formulario-input.css">
+    <link rel="stylesheet" href="../assets/css/login/formulario/formulario-btn.css">
+
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-nosotros.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-lista.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-link.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-parrafo.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-formulario.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-input-nombre.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-mensaje.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-btn.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-label.css">
+    <link rel="stylesheet" href="../assets/css/rodapie.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="logo header-logo">
+            <div class="logo-imagen"></div>
+            <h1 class="logo-titulo">
+                <em class="logo-alura">alura </em>geek
+            </h1>
+        </div>
+        <a class="header__login" href="#" target="_blank">Login</a>
+        <form class="header__formulario" action="">
+            <input class="header__input" type="text" name="buscar" id="buscar" hidden>
+            <button class="header__btn" hidden></button>
+        </form>
+        <div class="header__lupa"></div>
+    </header>
+    <main>
+        <form action="" class="formulario">
+            <h2 class="formulario__titulo">iniciar sesión</h2>
+            <label for="email" class="formulario__label">
+                email
+                <input class="formulario__input" type="email" id="email" name="email" data-formulario-email placeholder="user@email.com">
+            </label>
+            <label for="pass" class="formulario__label">
+                contraseña
+                <input class="formulario__input" type="password" id="pass" name="pass" data-formulario-pass placeholder="contraseña">
+            </label>
+            <button disabled="disabled" class="formulario__btn">ingresar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__nosotros">
+            <div class="logo footer-logo">
+                <div class="logo-imagen"></div>
+                <h1 class="logo-titulo">
+                    <em class="logo-alura">alura </em>geek
+                </h1>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__lista">
+                    <li class="footer__item"><a href="#" class="footer__link">Quienes somos</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Política de privacidad</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Programa de fidelidad</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Nuestras tiendas</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Quiero una franquicia</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Anúncia aquí</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="" class="footer__formulario">
+                <p class="footer__parrafo">Hable con nosotros</p>
+                <label class="footer__label-nombre" for="nombre">
+                    Nombre:
+                    <input type="text" class="footer__input-nombre" id="nombre" name="nombre">
+                </label>
+                <label class="footer__label-mensaje" for="mensaje">
+                    Mensaje:
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="footer__mensaje"></textarea>
+                </label>
+                <button class="footer__btn">Enviar mensaje</button>
+            </form>
+    </footer>
+    <section class="rodapie">
+        <p class="rodapie__parrafo">&#169 Copyrigth <time>2022</time> | Creado por <em class="rodapie__nombre">Joel</em></p>
+    </section>
+</body>
+</html>

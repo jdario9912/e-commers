@@ -1,0 +1,9 @@
+.formulario__btn{
+    background: var(--azul100);
+    border: none;
+    color: var(--blanco10);
+    font-family: var(--dosis);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: .7rem 2rem;
+}

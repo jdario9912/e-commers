@@ -1,0 +1,5 @@
+@media only screen and (min-width: 992px) {
+    .banner, .star-wars, .consolas, .diversos{
+        padding: 1.8rem 9rem;
+    }
+}

@@ -10,7 +10,8 @@
     --blanco: #E5E5E5;
 
     /* Background */
-    --blanco: #E5E5E5;
+    --blanco: #FFFFFF;
+    --blanco10: #E5E5E5;
     --azul10: #EAF2FD;
 }
 
@@ -19,7 +20,7 @@
 }
 
 .body{
-    background-color: var(--blanco);
+    background-color: var(--blanco10);
     color: var(--preto);
     font-family: var(--dosis);
 }

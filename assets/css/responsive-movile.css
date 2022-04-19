@@ -10,7 +10,7 @@
 
 @media only screen and (max-width: 360px) {
     .header__lupa{
-        display: none;
+        align-self: flex-end;
     }
 } */
 

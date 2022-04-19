@@ -1,5 +1,6 @@
 .header{
     align-items: center;
+    background-color: var(--blanco);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -1,5 +1,5 @@
 @media only screen and (min-width: 992px) {
-    .header, .banner, .star-wars, .consolas, .diversos, .footer, .rodapie{
+    .header, .footer, .rodapie{
         padding: 1.8rem 9rem;
     }
 

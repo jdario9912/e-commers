@@ -1,6 +1,6 @@
 .rodapie{
     align-items: center;
-    background: var(--blanco);
+    background-color: var(--blanco);
     display: flex;
     flex-direction: column;
 }
