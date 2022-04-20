@@ -1,7 +1,8 @@
 .formulario__input{
     border: none;
     border-radius: 5px;
-    height: 1.8rem;
+    height: 2.5rem;
     margin-top: .2rem;
     width: 240px;
+    font-weight: 400;
 }

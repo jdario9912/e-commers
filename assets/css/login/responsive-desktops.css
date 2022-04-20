@@ -1,0 +1,13 @@
+@media only screen and (min-width: 992px) {
+    .formulario{
+        height: 75vh;
+    }
+    
+    .formulario__input{
+        border-radius: 2px;
+    }
+
+    .formulario__btn{
+        width: 240px;
+    }
+}
