@@ -1,0 +1,30 @@
+.producto-seleccionado{
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-seleccionado__imagen{
+    align-self: center;
+    height: 350px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.producto-seleccionado__textos{
+    padding: 1rem;
+}
+
+.producto-seleccionado__titulo{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.producto-seleccionado__precio{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.producto-seleccionado__descripcion{
+    font-size: 1.05rem;
+}
