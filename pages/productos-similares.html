@@ -6,15 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos Similares</title>
     <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka:wght@500&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Dosis&family=Fredoka:wght@500;700&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/normalice.css">
+    <link rel="stylesheet" href="../assets/css/logo.css">
+    <link rel="stylesheet" href="../assets/css/logo/logo-imagen.css">
+    <link rel="stylesheet" href="../assets/css/logo/logo-titulo.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/header/header-form.css">
+    <link rel="stylesheet" href="../assets/css/header/header-login.css">
+    <link rel="stylesheet" href="../assets/css/header/header-input.css">
+    <link rel="stylesheet" href="../assets/css/header/header-btn.css">
+    <link rel="stylesheet" href="../assets/css/header/header-lupa.css">
+    <!-- Aca terminan los estilos para esta pagina -->
+    <link rel="stylesheet" href="../assets/css/productos-similares/similares.css">
+    <!-- Aca terminan los estilos para esta pagina -->
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-nosotros.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-lista.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-link.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-parrafo.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-formulario.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-input-nombre.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-mensaje.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-btn.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-label.css">
+    <link rel="stylesheet" href="../assets/css/rodapie.css">
+    <link rel="stylesheet" href="../assets/css/responsive-tablet.css">
+    <link rel="stylesheet" href="../assets/css/responsive-desktops.css">
 </head>
-<body>
+<body class="body">
+    <header-component></header-component>
     <div class="producto-seleccionado">
-        <img src="../assets/img/productos/starWars/R8L1l9RN198.png" alt="" class="producto-seleccionado__imagen">
+        <img src="" alt="" class="producto-seleccionado__imagen">
         <div class="producto-seleccionado__textos">
             <h2 class="producto-seleccionado__titulo">Producto ABC</h2>
             <p class="producto-seleccionado__precio">$ 100.00</p>
             <p class="producto-seleccionado__descripcion">Lorem ipsum dolor sit amet consectetur adipiscing elit parturient, vulputate est penatibus montes magna luctus ad convallis, duis turpis vestibulum varius feugiat nisl class. Iaculis dictum scelerisque taciti sociosqu consequat nisi nostra varius, nibh et pharetra malesuada ad metus netus id vulputate, tempor quisque mauris natoque porttitor eros orci. Ultrices dictumst primis vulputate vehicula etiam, mi erat vivamus fames fringilla pulvinar, purus egestas sem congue.</p>
         </div>
     </div>
+    <section class="diversos">
+        <div class="encabezado">
+            <h2 class="encabezado__titulo">diversos</h2>
+            <a href="#" class="encabezado__mas">ver todo →</a>
+        </div>
+        <div class="productos">
+            <div class="producto">
+                <img class="producto__imagen" src="./assets/img/productos/diversos/bUgaIaZysH0.png" alt="" srcset="">
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <img class="producto__imagen" src="./assets/img/productos/diversos/fMP-oCze3AY.png" alt="" srcset="">
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <img class="producto__imagen" src="./assets/img/productos/diversos/jMT6BrgBuXU.png" alt="" srcset="">
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+            <div class="producto">
+                <img class="producto__imagen" src="./assets/img/productos/diversos/MxVkWPiJALs.png" alt="" srcset="">
+                <h3 class="producto__titulo">producto ABC</h3>
+                <p class="producto__precio">$ 100.00</p>
+                <a href="#" class="producto__mas">ver producto</a>
+            </div>
+        </div>
+    </section>
+    <footer-component></footer-component>
+    <script src="../assets/js/components/header.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
 </body>
 </html>

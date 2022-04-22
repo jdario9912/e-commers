@@ -1,0 +1,8 @@
+.producto-seleccionado{
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-seleccionado__imagen{
+    height: 200px;
+}
