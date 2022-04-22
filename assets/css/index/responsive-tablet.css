@@ -2,4 +2,21 @@
     .banner, .star-wars, .consolas, .diversos{
         padding: 2rem;
     }
+
+    .banner{
+        height: 16rem;
+    }
+
+    .banner__titulo{
+        font-size: 2.6rem;
+    }
+    
+    .banner__parrafo{
+        font-size: 1.76rem;
+        margin: 1rem 0;
+    }
+
+    .producto{
+        max-width: 173px;
+    }
 }

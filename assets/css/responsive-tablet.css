@@ -1,27 +1,13 @@
-@media only screen and (min-width: 768px) {
-    .footer, .rodapie{
-        padding: 2rem;
-    }
+/* ESTOS ESTILOS SON COMUNES A TODAS LAS PAGINAS */
 
+@media only screen and (min-width: 768px) {
+    
     .header__login{
         order: 1;
     }
-
-    .banner{
-        height: 16rem;
-    }
-
-    .banner__titulo{
-        font-size: 2.6rem;
-    }
-
-    .banner__parrafo{
-        font-size: 1.76rem;
-        margin: 1rem 0;
-    }
-
-    .producto{
-        max-width: 164px;
+    
+    .footer, .rodapie{
+        padding: 2rem;
     }
 
     .footer{

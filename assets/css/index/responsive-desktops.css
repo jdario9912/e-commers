@@ -2,4 +2,10 @@
     .banner, .star-wars, .consolas, .diversos{
         padding: 1.8rem 8.5rem;
     }
+
+    .producto{
+        width: 165px;
+    }
+
+
 }
