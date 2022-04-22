@@ -1,10 +1,11 @@
 .footer__btn{
+    align-self: flex-end;
     background: var(--azul100);
     border: none;
     color: var(--blanco);
     font-family: var(--dosis);
     font-size: 1.1rem;
+    max-width: 215px;
     padding: 1rem 0;
     width: 50%;
-    align-self: flex-end;
 }

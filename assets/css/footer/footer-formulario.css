@@ -1,5 +1,6 @@
 .footer__formulario{
     display: flex;
     flex-direction: column;
+    max-width: 410px;
     width: 100%;
 }
