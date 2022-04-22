@@ -1,3 +1,4 @@
+/* ESTOS ESTILOS SON COMUNES A TODAS LAS PAGINAS */
 @media only screen and (min-width: 992px) {
     .header, .footer, .rodapie{
         padding: 1.8rem 8.5rem;
