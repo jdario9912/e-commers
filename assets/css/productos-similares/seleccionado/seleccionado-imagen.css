@@ -1,0 +1,6 @@
+.producto-seleccionado__imagen{
+    align-self: center;
+    height: 350px;
+    max-width: 400px;
+    width: 100%;
+}
