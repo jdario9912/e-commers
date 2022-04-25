@@ -1,8 +1,9 @@
 @media only screen and (min-width: 992px) {
-    
-}
+    .producto-seleccionado{
+        padding: 1.8rem 8.5rem;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
+    .similares{
+        padding: 1.8rem 8.5rem;
+    }
 }
