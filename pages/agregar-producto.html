@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../assets/css/footer/footer-btn.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-label.css">
     <link rel="stylesheet" href="../assets/css/rodapie.css">
+    <link rel="stylesheet" href="../assets/css/responsive-movile.css">
     <link rel="stylesheet" href="../assets/css/responsive-tablet.css">
     <link rel="stylesheet" href="../assets/css/responsive-desktops.css">
     <!-- Responsividad de esta pagina -->
@@ -44,19 +45,31 @@
     <section class="agregar">
         <h2 class="agregar__titulo">Agregar nuevo producto</h2>
         <form action="" class="agregar__formulario">
-            <div class="agregar__contenedor-imagen">
-                <label for="imagen" class="agregar__label-imagen">
+            <!-- <div class="agregar__contenedor-imagen">
+                <label for="agregar__imagen-movile" class="agregar__label-imagen">
                     <span class="agregar__icono-mas">➕</span>
                     Agregar una imagen para el producto
                 </label>
                 <input 
                     type="file" 
                     class="agregar__input-imagen" 
-                    id="imagen" 
+                    id="agregar__imagen-movile" 
                     accept=".jpg, .jpeg, .png"
                     required
                 >
+            </div> -->
+
+            <div>
+                <div>
+                    <div></div>
+                    <p>Arrastra para agregar una imagen al producto</p>
+                </div>
+                O
+                <label for="agregar__imagen-td">
+                    <input type="file" name="" id="agregar__imagen-td">
+                </label>
             </div>
+
             <label for="nombre" class="label__inputs">
                 Nombre del producto
                 <input 
