@@ -1,0 +1,6 @@
+.agregar__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin: 1rem 0;
+  }

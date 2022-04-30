@@ -1,0 +1,7 @@
+.label__inputs{
+    background-color: var(--blanco);
+    border-bottom: 1px solid var(--preto50);
+    display: flex;
+    flex-direction: column;
+    padding: .8rem 0 0 .8rem;
+}

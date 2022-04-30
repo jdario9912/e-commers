@@ -1,0 +1,5 @@
+.agregar__imagen-td--icono{
+    background: url(../../img/agregar-producto/agregar-imagen__icono.png) no-repeat center / cover;
+    height: 34px;
+    width: 34px;
+  }
