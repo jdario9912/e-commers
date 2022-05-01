@@ -1,0 +1,9 @@
+.barra{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

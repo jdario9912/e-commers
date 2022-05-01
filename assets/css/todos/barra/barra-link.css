@@ -1,0 +1,5 @@
+.barra__link{
+    background-color: var(--azul100);
+    color: var(--blanco);
+    padding: .8rem 1rem;
+}
