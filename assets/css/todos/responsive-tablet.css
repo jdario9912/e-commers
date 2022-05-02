@@ -1,5 +1,15 @@
 @media only screen and (min-width: 768px) {
-    .barra{
+    .barra, .todos__productos{
         padding: 1rem 2rem;
+
+    }
+
+    .todos__productos{
+        justify-content: initial;
+        gap: 9px;
+    }
+    
+    .todos__producto{
+        width: 24%;
     }
 }

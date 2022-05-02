@@ -1,0 +1,7 @@
+.todos__producto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 16px;
+    width: 48%;
+}

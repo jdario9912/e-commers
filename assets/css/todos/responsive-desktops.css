@@ -1,5 +1,9 @@
 @media only screen and (min-width: 992px) {
-    .barra{
+    .barra, .todos__productos{
         padding: 1.8rem 8.5rem;
+    }
+
+    .todos__producto{
+        max-width: 200px;
     }
 }

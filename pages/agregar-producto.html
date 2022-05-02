@@ -58,81 +58,83 @@
 </head>
 <body class="body">
     <header-component></header-component>
-    <section class="agregar">
-        <h2 class="agregar__titulo">Agregar nuevo producto</h2>
-        <form action="" class="agregar__formulario">
-            <div class="agregar__contenedor-imagen">
-                <label for="agregar__imagen-movile" class="agregar__label-imagen">
-                    <span class="agregar__icono-mas">➕</span>
-                    Agregar una imagen para el producto
-                </label>
-                <input 
-                    type="file" 
-                    class="agregar__input-imagen" 
-                    id="agregar__imagen-movile" 
-                    accept=".jpg, .jpeg, .png"
-                    required
-                >
-            </div>
-
-            <div class="agregar__contenedor-imagen-td">
-                <div class="agregar__imagen-td">
-                    <div class="agregar__imagen-td--icono"></div>
-                    <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
-                </div>
-                O
-                <label for="agregar__imagen-td--input" class="agregar__imagen-td--label">
-                    Buscar en dispositivo
-                    <input type="file"
-                           class="agregar__imagen-td--input"
-                           id="agregar__imagen-td--input"
-                           accept=".jpg, .jpeg, .png"
-                           required
+    <main>
+        <section class="agregar">
+            <h2 class="agregar__titulo">Agregar nuevo producto</h2>
+            <form action="" class="agregar__formulario">
+                <div class="agregar__contenedor-imagen">
+                    <label for="agregar__imagen-movile" class="agregar__label-imagen">
+                        <span class="agregar__icono-mas">➕</span>
+                        Agregar una imagen para el producto
+                    </label>
+                    <input 
+                        type="file" 
+                        class="agregar__input-imagen" 
+                        id="agregar__imagen-movile" 
+                        accept=".jpg, .jpeg, .png"
+                        required
                     >
+                </div>
+
+                <div class="agregar__contenedor-imagen-td">
+                    <div class="agregar__imagen-td">
+                        <div class="agregar__imagen-td--icono"></div>
+                        <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                    </div>
+                    O
+                    <label for="agregar__imagen-td--input" class="agregar__imagen-td--label">
+                        Buscar en dispositivo
+                        <input type="file"
+                            class="agregar__imagen-td--input"
+                            id="agregar__imagen-td--input"
+                            accept=".jpg, .jpeg, .png"
+                            required
+                        >
+                    </label>
+                </div>
+
+                <label for="nombre" class="label__inputs">
+                    Nombre del producto
+                    <input 
+                    type="text" 
+                    class="agregar__input-nombre" 
+                    id="nombre"
+                    required
+                    pattern="[A-Z][a-zñ]{1,}"
+                    placeholder="nombre del producto"
+                    >
+                    <span class="validity__nombre"></span>
                 </label>
-            </div>
+                <label for="precio" class="label__inputs">
+                    Precio del producto
+                    <input 
+                        type="number" 
+                        class="agregar__input-precio"
+                        min="0"
+                        pattern="\d{1,6}.\d{2}"
+                        placeholder="$00.00"
+                    >
+                    <span class="validity__precio"></span>
+                </label>
+                <label for="descripcion" class="label__descripcion">
+                    Descripción del producto
+                    <textarea 
+                        name="descripcion" 
+                        id="descripcion" 
+                        cols="30" 
+                        rows="10" 
+                        class="agregar__descripcion"
+                    ></textarea>
+                    <span class="validity__descripcion"></span>
 
-            <label for="nombre" class="label__inputs">
-                Nombre del producto
-                <input 
-                type="text" 
-                class="agregar__input-nombre" 
-                id="nombre"
-                required
-                pattern="[A-Z][a-zñ]{1,}"
-                placeholder="nombre del producto"
-                >
-                <span class="validity__nombre"></span>
-            </label>
-            <label for="precio" class="label__inputs">
-                Precio del producto
-                <input 
-                    type="number" 
-                    class="agregar__input-precio"
-                    min="0"
-                    pattern="\d{1,6}.\d{2}"
-                    placeholder="$00.00"
-                >
-                <span class="validity__precio"></span>
-            </label>
-            <label for="descripcion" class="label__descripcion">
-                Descripción del producto
-                <textarea 
-                    name="descripcion" 
-                    id="descripcion" 
-                    cols="30" 
-                    rows="10" 
-                    class="agregar__descripcion"
-                ></textarea>
-                <span class="validity__descripcion"></span>
-
-            </label>
-            <button 
-                class="agregar__btn" 
-                type="submit"
-            >agregar producto</button>
-        </form>
-    </section>
+                </label>
+                <button 
+                    class="agregar__btn" 
+                    type="submit"
+                >agregar producto</button>
+            </form>
+        </section>
+    </main>
     <footer-component></footer-component>
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/footer.js"></script>

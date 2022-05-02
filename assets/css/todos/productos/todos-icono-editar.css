@@ -1,0 +1,8 @@
+.todos__icono-editar{
+    background: url(../../../img/todos/todos-icono-editar.png) no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
