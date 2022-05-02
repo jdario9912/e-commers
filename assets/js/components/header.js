@@ -12,7 +12,7 @@ class Header extends HTMLElement {
                         <em class="logo-alura">alura </em>geek
                     </h1>
                 </div>
-                <a class="header__login" href="#" target="_blank">Login</a>
+                <a class="header__login" href="" target="_blank">Login</a>
                 <form class="header__formulario" action="">
                     <input class="header__input" type="text" name="buscar" id="buscar" hidden>
                     <button class="header__btn" hidden></button>
