@@ -31,3 +31,5 @@
 //     console.log(orientacionPantalla);
     
 // });
+
+console.log('Hola Node');

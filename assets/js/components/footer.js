@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
         this.innerHTML= `
             <footer class="footer">
                 <div class="footer__nosotros">
-                    <div class="logo footer-logo">
+                    <div class="logo footer-logo" data-logo-footer>
                         <div class="logo-imagen"></div>
                         <h1 class="logo-titulo">
                             <em class="logo-alura">alura </em>geek

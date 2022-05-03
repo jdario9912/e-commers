@@ -1,0 +1,20 @@
+{
+  "name": "challenge04ecommers",
+  "version": "1.0.0",
+  "description": "Realizacion de un e-cormmerse funcional para implementar todo lo aprendido referido a manejo de DOM, localstorage, CRUD y CSS",
+  "main": "./assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdario9912/e-commers.git"
+  },
+  "author": "Joel Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdario9912/e-commers/issues"
+  },
+  "homepage": "https://github.com/jdario9912/e-commers#readme",
+  "type": "module"
+}
