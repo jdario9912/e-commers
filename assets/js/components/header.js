@@ -6,13 +6,13 @@ class Header extends HTMLElement {
     connectedCallback(){
         this.innerHTML= `
             <header class="header">
-                <div class="logo header-logo" data-logo-header>
+                <div class="logo" data-logo-header>
                     <div class="logo-imagen"></div>
                     <h1 class="logo-titulo">
                         <em class="logo-alura">alura </em>geek
                     </h1>
                 </div>
-                <a class="header__login" href="" target="_blank">Login</a>
+                <a class="header__login" href="../pages/login.html" data-login>Login</a>
                 <form class="header__formulario" action="">
                     <input class="header__input" type="text" name="buscar" id="buscar" hidden>
                     <button class="header__btn" hidden></button>

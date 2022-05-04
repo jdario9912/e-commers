@@ -1,7 +1,12 @@
 import { propiedades } from "../service-btns.js";
 
-const logoAlura = document.querySelector('[data-logo-header]');
+const logoAluraHeader = document.querySelector('[data-logo-header]');
+const logoAluraFooter = document.querySelector('[data-logo-footer]');
 
-logoAlura.addEventListener('click', () => {
+logoAluraHeader.addEventListener('click', () => {
+    propiedades.irAlIndex();
+});
+
+logoAluraFooter.addEventListener('click', () => {
     propiedades.irAlIndex();
 });
