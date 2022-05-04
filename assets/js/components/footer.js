@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
                         <p class="footer__parrafo">Hable con nosotros</p>
                         <label class="footer__label-nombre" for="nombre">
                             Nombre:
-                            <input type="text" class="footer__input-nombre" id="nombre" name="nombre">
+                            <input type="text" class="footer__input-nombre" id="nombre" name="nombre" required pattern="[A-Z][a-z]+(\s?[A-Z][a-z])?">
                         </label>
                         <label class="footer__label-mensaje" for="mensaje">
                             Mensaje:
