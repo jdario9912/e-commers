@@ -1,0 +1,15 @@
+.footer__alert{
+    color: red;
+    font-size: .8rem;
+    padding-left: .9rem;
+    margin-top: .3rem;
+}
+
+.footer__alert::before{
+    content: '* ';
+}
+
+.alert{
+    background-color: rgba(255, 0, 0, 0.281);
+    border: 1px solid red;
+}

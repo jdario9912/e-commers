@@ -26,15 +26,53 @@ class Footer extends HTMLElement {
                 </div>
                 <form action="" class="footer__formulario">
                         <p class="footer__parrafo">Hable con nosotros</p>
-                        <label class="footer__label-nombre" for="nombre">
+                        <label 
+                            class="footer__label-nombre" 
+                            for="nombre" 
+                            id="nombre"
+                            >
                             Nombre:
-                            <input type="text" class="footer__input-nombre" id="nombre" name="nombre" required pattern="[A-Z][a-z]+(\s?[A-Z][a-z])?">
+                            <input 
+                                type="text" 
+                                class="footer__input-nombre" 
+                                id="nombre" name="nombre" 
+                                required 
+                                pattern="[A-Z][a-z]+(\s?[A-Z][a-z])?"
+                                data-contacto-nombre
+                            >
+                            
+                            <span 
+                                class="footer__alert" 
+                                data-alert-nombre
+                            ></span>
                         </label>
-                        <label class="footer__label-mensaje" for="mensaje">
+
+                        <label 
+                            class="footer__label-mensaje" 
+                            for="mensaje" 
+                            id="mensaje"
+                            >
                             Mensaje:
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="footer__mensaje"></textarea>
+                            <textarea 
+                                name="mensaje" 
+                                class="footer__mensaje"
+                                id="mensaje" 
+                                cols="30" 
+                                rows="10" 
+                                data-contacto-mensaje
+                            ></textarea>
+                                
+                            <span 
+                                class="footer__alert" 
+                                hidden
+                                data-alert-mensaje
+                            ></span>
                         </label>
-                        <button class="footer__btn">Enviar mensaje</button>
+                        
+                        <button 
+                            class="footer__btn"
+                            data-contacto-btn
+                        >Enviar mensaje</button>
                     </form>
             </footer>
             <section class="rodapie">
