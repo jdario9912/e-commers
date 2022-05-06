@@ -9,3 +9,8 @@
     padding: 1rem 0;
     width: 50%;
 }
+
+.footer__btn:active{
+    background-color: var(--blanco);
+    color: var(--azul100);
+}

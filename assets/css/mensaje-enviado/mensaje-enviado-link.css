@@ -1,0 +1,11 @@
+.mensaje-enviado__link{
+    background-color: var(--azul100);
+    color: var(--blanco);
+    font-size: 1.2rem;
+    padding: .8rem 2rem;
+}
+
+.mensaje-enviado__link:active{
+    background-color: var(--blanco);
+    color: var(--azul100);
+}

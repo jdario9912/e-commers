@@ -33,11 +33,11 @@ class Footer extends HTMLElement {
                             >
                             Nombre:
                             <input 
-                                type="text" 
                                 class="footer__input-nombre" 
                                 id="nombre" name="nombre" 
-                                required 
+                                type="text" 
                                 pattern="[A-Z][a-z]+(\s?[A-Z][a-z])?"
+                                required
                                 data-contacto-nombre
                             >
                             
@@ -59,12 +59,12 @@ class Footer extends HTMLElement {
                                 id="mensaje" 
                                 cols="30" 
                                 rows="10" 
+                                required
                                 data-contacto-mensaje
                             ></textarea>
                                 
                             <span 
                                 class="footer__alert" 
-                                hidden
                                 data-alert-mensaje
                             ></span>
                         </label>

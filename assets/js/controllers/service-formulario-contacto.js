@@ -17,6 +17,18 @@ const validaInputNombre = (nombre, inputNombre, alertInputNombre) => {
     }
 }
 
+const validaAreaMensaje = (mensaje, areaMensaje, alertAreaMensaje) => {
+    alertAreaMensaje.removeAttribute('hidden');
+
+    if (mensaje == '') {
+        areaMensaje.classList.add('alert');
+        alertAreaMensaje.textContent = 'Este campo debe tener algun mensaje';
+    }else{
+        alertAreaMensaje.setAttribute('hidden', true);
+    }
+}
+
 export const accionesFormulario = {
-    validaInputNombre
+    validaInputNombre,
+    validaAreaMensaje
 }

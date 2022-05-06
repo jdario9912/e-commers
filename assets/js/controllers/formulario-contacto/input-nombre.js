@@ -1,10 +1,7 @@
-import { accionesFormulario } from "../service-formulario.js";
-
+import { accionesFormulario } from "../service-formulario-contacto.js";
 
 const inputNombre = document.querySelector('[data-contacto-nombre]');
 const alertInputNombre = document.querySelector('[data-alert-nombre]');
-const botonEnviar = document.querySelector('[data-contacto-btn]');
-
 
 alertInputNombre.setAttribute('hidden' , true);
 
