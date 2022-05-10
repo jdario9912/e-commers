@@ -1,5 +1,7 @@
 .formulario__label{
+    background-color: var(--blanco);
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    padding: .8rem;
 }

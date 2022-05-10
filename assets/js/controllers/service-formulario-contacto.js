@@ -4,7 +4,7 @@ const validaInputNombre = (nombre, inputNombre, alertInputNombre) => {
         alertInputNombre.removeAttribute('hidden');
         alertInputNombre.textContent = 'campo requerido';
     } else {
-        const regExp = /[A-Z][a-z]+(\s?[A-Z][a-z])?/.test(nombre);
+        const regExp = /[A-ZÁÉÍÓÚ][a-zñáéíóú]+(\s?[A-Z][a-zñáéíóú]+)?/.test(nombre);
         
         if(!regExp){
             inputNombre.classList.add('alert');

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/header/header-lupa.css">
     <!-- Aca empiezan las rutas de las estilos para esta pagina -->
     <link rel="stylesheet" href="../assets/css/login/formulario.css">
+    <link rel="stylesheet" href="../assets/css/login/formulario/formulario-alert.css">
     <link rel="stylesheet" href="../assets/css/login/formulario/formulario-titulo.css">
     <link rel="stylesheet" href="../assets/css/login/formulario/formulario-label.css">
     <link rel="stylesheet" href="../assets/css/login/formulario/formulario-input.css">
@@ -48,22 +49,45 @@
 <body class="body">
     <header-component></header-component>
     <main>
-        <form action="" class="formulario">
+        <form action="" class="formulario" data-formulario>
             <h2 class="formulario__titulo">iniciar sesión</h2>
             <label for="email" class="formulario__label">
                 email
-                <input class="formulario__input" type="email" id="email" name="email" data-formulario-email placeholder="user@email.com">
+                <input 
+                    class="formulario__input" 
+                    data-formulario-email 
+                    id="email" 
+                    name="email" 
+                    placeholder="user@email.com"
+                    pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                    required
+                    type="email" 
+                >
             </label>
+            <span class="formulario__alert" data-alert-email></span>
             <label for="pass" class="formulario__label">
                 contraseña
-                <input class="formulario__input" type="password" id="pass" name="pass" data-formulario-pass placeholder="contraseña">
+                <input 
+                class="formulario__input" 
+                data-formulario-pass 
+                id="pass" 
+                name="pass" 
+                placeholder="contraseña"
+                required
+                type="password"
+                >
             </label>
-            <button disabled="disabled" class="formulario__btn">ingresar</button>
+            <span class="formulario__alert" data-alert-password></span>
+            <button 
+                class="formulario__btn"
+            >ingresar</button>
         </form>
     </main>
     <footer-component></footer-component>
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/footer.js"></script>
     <script src="../assets/js/controllers/btns/logo.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-login/formulario-email.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-login/forumulario-password.js" type="module"></script>
 </body>
 </html>
