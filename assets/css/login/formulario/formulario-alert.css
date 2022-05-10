@@ -8,10 +8,6 @@
     content: '*';
 }
 
-.formulario__alert-label{
-    border: 1px solid red;
-}
-
 .alert{
     background-color: rgba(255, 0, 0, 0.281);
 }

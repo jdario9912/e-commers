@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-input-nombre-precio.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-descripcion.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-descripcion.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-alert.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-btn.css">
     <!-- Aca terminan los estilos para esta pagina -->
     <link rel="stylesheet" href="../assets/css/footer.css">
@@ -46,6 +47,7 @@
     <link rel="stylesheet" href="../assets/css/footer/footer-formulario.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-input-nombre.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-mensaje.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer-alert.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-btn.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-label.css">
     <link rel="stylesheet" href="../assets/css/rodapie.css">
@@ -96,37 +98,38 @@
                 <label for="nombre" class="label__inputs">
                     Nombre del producto
                     <input 
-                    type="text" 
-                    class="agregar__input-nombre" 
-                    id="nombre"
-                    required
-                    pattern="[A-Z][a-zñ]{1,}"
-                    placeholder="nombre del producto"
+                        type="text" 
+                        class="agregar__input-nombre"
+                        data-agregar-nombre
+                        id="nombre"
+                        required
+                        placeholder="nombre del producto"
                     >
-                    <span class="validity__nombre"></span>
+                    <span class="validity" data-agregar-alert-nombre></span>
                 </label>
                 <label for="precio" class="label__inputs">
                     Precio del producto
                     <input 
-                        type="number" 
                         class="agregar__input-precio"
+                        data-agregar-precio
                         min="0"
                         pattern="\d{1,6}.\d{2}"
                         placeholder="$00.00"
+                        type="number" 
                     >
-                    <span class="validity__precio"></span>
+                    <span class="validity" data-agregar-alert-precio></span>
                 </label>
                 <label for="descripcion" class="label__descripcion">
                     Descripción del producto
                     <textarea 
-                        name="descripcion" 
-                        id="descripcion" 
-                        cols="30" 
-                        rows="10" 
                         class="agregar__descripcion"
+                        cols="30" 
+                        data-agregar-descripcion
+                        id="descripcion" 
+                        name="descripcion" 
+                        rows="10" 
                     ></textarea>
-                    <span class="validity__descripcion"></span>
-
+                    <span class="validity" data-agregar-alert-descripcion></span>
                 </label>
                 <button 
                     class="agregar__btn" 
@@ -139,5 +142,9 @@
     <script src="../assets/js/components/header.js"></script>
     <script src="../assets/js/components/footer.js"></script>
     <script src="../assets/js/controllers/btns/logo.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-contacto/input-nombre.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-contacto/area-mensaje.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-agregar-producto/input-nombre.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-agregar-producto/input-precio.js" type="module"></script>
 </body>
 </html>

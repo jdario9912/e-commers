@@ -1,0 +1,17 @@
+.alert__label{
+    border: .85px solid red;
+}
+
+.alert__input{
+    background-color: rgba(255, 0, 0, 0.281);
+}
+
+.validity{
+    color: red;
+    font-size: .8rem;
+    margin: .3rem 0;
+}
+
+.validity::before{
+    content: '*';
+}
