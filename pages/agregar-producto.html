@@ -72,6 +72,7 @@
                     <input 
                         type="file" 
                         class="agregar__input-imagen" 
+                        data-agregar-imagen-movile
                         id="agregar__imagen-movile" 
                         accept=".jpg, .jpeg, .png"
                         required
@@ -88,6 +89,7 @@
                         Buscar en dispositivo
                         <input type="file"
                             class="agregar__imagen-td--input"
+                            data-agregar-imagen-td
                             id="agregar__imagen-td--input"
                             accept=".jpg, .jpeg, .png"
                             required
@@ -113,9 +115,10 @@
                         class="agregar__input-precio"
                         data-agregar-precio
                         min="0"
-                        pattern="\d{1,6}.\d{2}"
-                        placeholder="$00.00"
-                        type="number" 
+                        pattern="\d{1,},\d{2}"
+                        placeholder="$00,00"
+                        required
+                        type="text" 
                     >
                     <span class="validity" data-agregar-alert-precio></span>
                 </label>
@@ -127,12 +130,14 @@
                         data-agregar-descripcion
                         id="descripcion" 
                         name="descripcion" 
+                        required
                         rows="10" 
                     ></textarea>
                     <span class="validity" data-agregar-alert-descripcion></span>
                 </label>
                 <button 
                     class="agregar__btn" 
+                    data-agregar-btn
                     type="submit"
                 >agregar producto</button>
             </form>
@@ -146,5 +151,7 @@
     <script src="../assets/js/controllers/formulario-contacto/area-mensaje.js" type="module"></script>
     <script src="../assets/js/controllers/formulario-agregar-producto/input-nombre.js" type="module"></script>
     <script src="../assets/js/controllers/formulario-agregar-producto/input-precio.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-agregar-producto/input-descripcion.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-agregar-producto/input-imagen.js" type="module"></script>
 </body>
 </html>

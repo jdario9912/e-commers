@@ -10,7 +10,6 @@ inputPrecio.addEventListener('focus', () => {
 });
 
 inputPrecio.addEventListener('blur', () => {
-    accionesAgregarProducto.validaInputNombre(inputPrecio, alertPrecio);
+    accionesAgregarProducto.validaInputPrecio(inputPrecio, alertPrecio);
+    console.log(inputPrecio.validity);
 });
-
-// TENGO QUE SEGUIR CON EL CAMPO PRECIO
