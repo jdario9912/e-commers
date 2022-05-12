@@ -1,11 +1,19 @@
 .agregar__imagen-td{
-    align-items: center;
-    background-color: var(--blanco);
-    border: .8px dashed var(--preto50);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    height: 180px;
-    justify-content: center;
-    width: 300px;
-  }
+  align-items: center;
+  background-color: var(--blanco);
+  border: .8px dashed var(--preto50);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 180px;
+  justify-content: center;
+  width: 300px;
+}
+
+.agregar__imagen-td:hover{
+  cursor: pointer;
+}
+
+.agregar__imagen-td--active{
+  background-color: brown;
+}

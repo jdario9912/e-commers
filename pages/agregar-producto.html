@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-icono.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-label.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-input.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-resultante.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-inputs.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-input-nombre-precio.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-descripcion.css">
@@ -80,16 +81,17 @@
                 </div>
 
                 <div class="agregar__contenedor-imagen-td">
-                    <div class="agregar__imagen-td">
+                    <div class="agregar__imagen-td" data-agregar-imagen-zona>
                         <div class="agregar__imagen-td--icono"></div>
                         <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                        <img class="agregar__imagen-td--resultante" src="" alt="" data-agregar-imagen-td-resultante>
                     </div>
                     O
                     <label for="agregar__imagen-td--input" class="agregar__imagen-td--label">
                         Buscar en dispositivo
                         <input type="file"
                             class="agregar__imagen-td--input"
-                            data-agregar-imagen-td
+                            data-agregar-imagen-td-input
                             id="agregar__imagen-td--input"
                             accept=".jpg, .jpeg, .png"
                             required
