@@ -1,9 +1,32 @@
-const inputImagen = document.querySelector('[data-agregar-imagen-td-input]');
-const zonaResultante = document.querySelector('[data-agregar-imagen-zona]');
-const imgResultante = document.querySelector('[data-agregar-imagen-td-resultante]');
 
+// ESTO ES PARA FORMATO MOVILE
+/**-------------------------------------------------------------------------------------- */
+    // ME FALTA COMPLETAR EL DRAG AND DROP PARA MOVILE
+/**-------------------------------------------------------------------------------------- */
+
+
+
+// ESTO ES PARA FORMATO TABLET DESKTOP
+const inputImagenTD = document.querySelector('[data-agregar-imagen-td-input]');
+const zonaResultanteTD = document.querySelector('[data-agregar-imagen-td-zona]');
+const imgResultanteTD = document.querySelector('[data-agregar-imagen-td-resultante]');
 /**-------------------------------------------------------------------------------------- */
 // TODO ESTO ES PARA QUE FUNCIONE EL DRAG AND DROP
+
+// Le asigna la funcionalidad del input type file a la zona de drag and drop
+zonaResultanteTD.addEventListener('click', () => inputImagenTD.click());
+
+// Cambia el color del background al sostener la imagen sobre la zona drag
+zonaResultanteTD.addEventListener('dragover', (event) => {
+    event.preventDefault();
+    zonaResultanteTD.classList.add('agregar__imagen-td--active');
+});
+
+// Vuelve al color original el background de la zona drag al sacar la imagen de la zona drag
+zonaResultanteTD.addEventListener('dragleave', (event) => {
+    event.preventDefault();
+    zonaResultanteTD.classList.remove('agregar__imagen-td--active');
+});
 
 // Esta funcion la tengo que mover al service-formulario-agregar-producto.js
 const cargarImagen = (archivo) => {
@@ -12,30 +35,21 @@ const cargarImagen = (archivo) => {
     // devuelve la ruta donde esta el archivo que se esta cargando
     leerArchivo.readAsDataURL(archivo);
 
+    // la ruta obtenida es cargada en el atributo 'src' de la etiqueta 'img'
     leerArchivo.addEventListener('load', (event) =>{
-        imgResultante.setAttribute('src', event.target.result);
+        imgResultanteTD.setAttribute('src', event.target.result);
     });
 }
 
-zonaResultante.addEventListener('click', () => inputImagen.click());
-
-zonaResultante.addEventListener('dragover', (event) => {
+// coloca la imagen arrastrada en la zona drag
+zonaResultanteTD.addEventListener('drop', (event) => {
     event.preventDefault();
-    zonaResultante.classList.add('agregar__imagen-td--active');
-});
+    zonaResultanteTD.classList.add('agregar__imagen-td--active');
+    
+    // Le asigna la imagen que se esta cargando en el input file a la zona drag
+    inputImagenTD.files = event.dataTransfer.files
 
-zonaResultante.addEventListener('dragleave', (event) => {
-    event.preventDefault();
-    zonaResultante.classList.remove('agregar__imagen-td--active');
-});
-
-zonaResultante.addEventListener('drop', (event) => {
-    event.preventDefault();
-    zonaResultante.classList.add('agregar__imagen-td--active');
-
-    inputImagen.files = event.dataTransfer.files
-
-    const file = inputImagen.files[0];
+    const file = inputImagenTD.files[0];
 
     cargarImagen(file);
 });
@@ -44,7 +58,7 @@ zonaResultante.addEventListener('drop', (event) => {
 
 // ESTO HACE QUE CAMBIE LA IMAGEN MOSTRADA CAMBIE CUANDO SE AGREGA DESDE EL INPUT
 
-inputImagen.addEventListener('change', (event) => {
+inputImagenTD.addEventListener('change', (event) => {
     const archivo = event.target.files[0];
 
     cargarImagen(archivo);

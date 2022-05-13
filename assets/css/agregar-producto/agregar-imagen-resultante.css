@@ -1,8 +1,12 @@
-.agregar__imagen-td--resultante{
+.agregar__imagen--resultante{
     height: 100%;
     border: none;
     object-fit: cover;
     position: relative;
     width: 100%;
     z-index: 100;
+}
+
+.agregar__imagen--resultante:hover{
+    cursor: pointer;
 }

@@ -25,10 +25,13 @@
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-titulo.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-formulario.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-contenedor-imagen.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-it.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-imagen.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-input-imagen.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-resultante.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-contenedor-imagen-td.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-it.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-icono.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-label.css">
     <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-input.css">
@@ -65,25 +68,30 @@
         <section class="agregar">
             <h2 class="agregar__titulo">Agregar nuevo producto</h2>
             <form action="" class="agregar__formulario">
-                <div class="agregar__contenedor-imagen">
-                    <label for="agregar__imagen-movile" class="agregar__label-imagen">
-                        <span class="agregar__icono-mas">➕</span>
-                        Agregar una imagen para el producto
-                    </label>
-                    <input 
-                        type="file" 
-                        class="agregar__input-imagen" 
-                        data-agregar-imagen-movile
-                        id="agregar__imagen-movile" 
-                        accept=".jpg, .jpeg, .png"
-                        required
-                    >
+                <div class="agregar__contenedor-imagen" >
+                    <div class="agregar__imagen--it">
+                        <label for="agregar__imagen-movile" class="agregar__label-imagen">
+                            <span class="agregar__icono-mas">➕</span>
+                            Agregar una imagen para el producto
+                        </label>
+                        <input 
+                            type="file" 
+                            class="agregar__input-imagen" 
+                            data-agregar-imagen-movile
+                            id="agregar__imagen-movile" 
+                            accept=".jpg, .jpeg, .png"
+                            required
+                        >
+                    </div>
+                    <img class="agregar__imagen--resultante" src="" alt="" data-agregar-imagen-resultante>
                 </div>
 
                 <div class="agregar__contenedor-imagen-td">
-                    <div class="agregar__imagen-td" data-agregar-imagen-zona>
-                        <div class="agregar__imagen-td--icono"></div>
-                        <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                    <div class="agregar__imagen-td" data-agregar-imagen-td-zona>
+                        <div class="agregar__imagen-td--it">
+                            <div class="agregar__imagen-td--icono"></div>
+                            <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                        </div>
                         <img class="agregar__imagen-td--resultante" src="" alt="" data-agregar-imagen-td-resultante>
                     </div>
                     O

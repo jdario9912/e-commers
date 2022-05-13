@@ -15,5 +15,5 @@
 }
 
 .agregar__imagen-td--active{
-  background-color: brown;
+  background-color: var(--preto50T);
 }

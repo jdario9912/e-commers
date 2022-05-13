@@ -1,6 +1,7 @@
 .agregar__contenedor-imagen{
-    background-color: var(--blanco);
-    border: .8px dashed var(--preto50);
-    height: 160px;
-    width: 100%;
-  }
+  background-color: var(--blanco);
+  border: .8px dashed var(--preto50);
+  height: 160px;
+  position: relative;
+  width: 100%;
+}
