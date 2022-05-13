@@ -11,5 +11,4 @@ inputPrecio.addEventListener('focus', () => {
 
 inputPrecio.addEventListener('blur', () => {
     accionesAgregarProducto.validaInputPrecio(inputPrecio, alertPrecio);
-    console.log(inputPrecio.validity);
 });

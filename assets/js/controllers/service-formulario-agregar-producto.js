@@ -48,8 +48,34 @@ const validaAreaDescripcion = (areaDescripcion, alertDescripcion) => {
     }
 }
 
+const cargarImagenMovile = (archivo, imgResultanteMovile) => {
+    const leerArchivo = new FileReader();
+
+    // devuelve la ruta donde esta el archivo que se esta cargando
+    leerArchivo.readAsDataURL(archivo);
+
+    // la ruta obtenida es cargada en el atributo 'src' de la etiqueta 'img'
+    leerArchivo.addEventListener('load', (event) => {
+        imgResultanteMovile.setAttribute('src', event.target.result);
+    });
+}
+
+const cargarImagenTD = (archivo, imgResultanteTD) => {
+    const leerArchivo = new FileReader();
+
+    // devuelve la ruta donde esta el archivo que se esta cargando
+    leerArchivo.readAsDataURL(archivo);
+
+    // la ruta obtenida es cargada en el atributo 'src' de la etiqueta 'img'
+    leerArchivo.addEventListener('load', (event) => {
+        imgResultanteTD.setAttribute('src', event.target.result);
+    });
+}
+
 export const accionesAgregarProducto = {
     validaInputNombre,
     validaInputPrecio,
-    validaAreaDescripcion
+    validaAreaDescripcion,
+    cargarImagenMovile,
+    cargarImagenTD,
 }
