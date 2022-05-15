@@ -1,3 +1,10 @@
+const validaInputImagen = (inputImagen, alertImagen) => {
+    if (inputImagen.validity.valueMissing) {
+        alertImagen.removeAttribute('hidden');
+        alertImagen.textContent = 'debes elegir una imagen que mostrar';
+    }
+}
+
 const validaInputNombre = (inputNombre, alertNombre) => {
     if(inputNombre.validity.valueMissing){
         alertNombre.removeAttribute('hidden');
@@ -24,7 +31,7 @@ const validaInputPrecio = (inputPrecio, alertPrecio) => {
 
         if(inputPrecio.validity.patternMismatch){
             alertPrecio.removeAttribute('hidden');
-        alertPrecio.textContent = 'patron correcto para el precio: 00,00';
+        alertPrecio.textContent = 'el precio debe estar separado por una coma (,)';
 
         inputPrecio.parentElement.classList.add('alert__label');
         inputPrecio.classList.add('alert__input');   
@@ -78,4 +85,5 @@ export const accionesAgregarProducto = {
     validaAreaDescripcion,
     cargarImagenMovile,
     cargarImagenTD,
+    validaInputImagen
 }

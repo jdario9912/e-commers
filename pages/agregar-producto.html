@@ -70,15 +70,15 @@
             <form action="" class="agregar__formulario">
                 <div class="agregar__contenedor-imagen" data-agregar-zonadrag-movile>
                     <div class="agregar__imagen--it">
-                        <label for="agregar__imagen-movile" class="agregar__label-imagen">
+                        <label for="agregar__imagen" class="agregar__label-imagen">
                             <span class="agregar__icono-mas">➕</span>
                             Agregar una imagen para el producto
                         </label>
                         <input 
                             type="file" 
                             class="agregar__input-imagen" 
-                            data-agregar-input-movile
-                            id="agregar__imagen-movile" 
+                            data-agregar-input
+                            id="agregar__imagen" 
                             accept=".jpg, .jpeg, .png"
                             required
                         >
@@ -95,17 +95,11 @@
                         <img class="agregar__imagen-td--resultante" src="" alt="" data-agregar-imagen-td-resultante>
                     </div>
                     O
-                    <label for="agregar__imagen-td--input" class="agregar__imagen-td--label">
+                    <label for="agregar__imagen" class="agregar__imagen-td--label">
                         Buscar en dispositivo
-                        <input type="file"
-                            class="agregar__imagen-td--input"
-                            data-agregar-imagen-td-input
-                            id="agregar__imagen-td--input"
-                            accept=".jpg, .jpeg, .png"
-                            required
-                        >
                     </label>
                 </div>
+                <span class="validity" data-agregar-alert-imagen></span>
 
                 <label for="nombre" class="label__inputs">
                     Nombre del producto
