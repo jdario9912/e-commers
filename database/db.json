@@ -10,5 +10,52 @@
             "email" : "d2a2r2i2o@hotmail.com",
             "password" : "1234"
         }
+    ],
+    "productos" : [
+        {
+            "starWars" : [
+                {
+                    "id" : "wasosqui1",
+                    "nombre" : "Mouse inalambrico",
+                    "imagen" : "mouse.jpg",
+                    "precio" : "453,99",
+                    "descripcion" : "Ratón inalámbrico rapido y de bajo costo",
+                    "codigo" : "00AA11BB"
+                },
+                {
+                    "id" : "wasosqui2",
+                    "nombre" : "Teclado inalambrico",
+                    "imagen" : "teclado.jpg",
+                    "precio" : "1300,99",
+                    "descripcion" : "Teclado inalámbrico low profile",
+                    "codigo" : "01AA11BB"
+                }
+            ],
+            "consolas" : [
+                {
+                    "id" : "wandosqui1",
+                    "nombre" : "Family",
+                    "imagen" : "fammily01.jpg",
+                    "precio" : "1000,00",
+                    "descripcion" : "Consola de juegos para principiantes"
+                },
+                {
+                    "id" : "wandosqui2",
+                    "nombre" : "Sega",
+                    "imagen" : "sega01.jpg",
+                    "precio" : "2000,00",
+                    "descripcion" : "Consola de juegos para post-principiantes"
+                }
+            ],
+            "diversos" : [
+                {
+                    "id" : "diversoide",
+                    "nombre" : "Remera Space",
+                    "imagen" : "remera-space.jpg",
+                    "precio" : "58,99",
+                    "descripcion" : "Remera estampada color negro"
+                }
+            ]
+        }
     ]
 }
