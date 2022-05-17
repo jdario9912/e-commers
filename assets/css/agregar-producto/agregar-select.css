@@ -1,0 +1,6 @@
+.agregar__select{
+    background-color: var(--blanco);
+    border: none;
+    height: 1.2rem;
+    margin-top: 2px;
+}

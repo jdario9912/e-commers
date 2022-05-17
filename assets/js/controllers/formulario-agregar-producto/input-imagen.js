@@ -2,7 +2,7 @@ import { accionesAgregarProducto } from "../service-formulario-agregar-producto.
 
 const botonEnviar = document.querySelector('[data-agregar-btn]');
 const alertImagen = document.querySelector('[data-agregar-alert-imagen]');
-const inputImagen = document.querySelector('[data-agregar-input]');
+const inputImagen = document.querySelector('[data-agregar-imagen]');
 
 alertImagen.setAttribute('hidden', true);
 

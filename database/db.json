@@ -1,61 +1,154 @@
 {
-    "usuarios" : [
-        {
-            "id" : 1,
-            "email" : "joeldario9912@gmail.com",
-            "password" : "1234"
-        },
-        {
-            "id" : 2,
-            "email" : "d2a2r2i2o@hotmail.com",
-            "password" : "1234"
-        }
-    ],
-    "productos" : [
-        {
-            "starWars" : [
-                {
-                    "id" : "wasosqui1",
-                    "nombre" : "Mouse inalambrico",
-                    "imagen" : "mouse.jpg",
-                    "precio" : "453,99",
-                    "descripcion" : "Ratón inalámbrico rapido y de bajo costo",
-                    "codigo" : "00AA11BB"
-                },
-                {
-                    "id" : "wasosqui2",
-                    "nombre" : "Teclado inalambrico",
-                    "imagen" : "teclado.jpg",
-                    "precio" : "1300,99",
-                    "descripcion" : "Teclado inalámbrico low profile",
-                    "codigo" : "01AA11BB"
-                }
-            ],
-            "consolas" : [
-                {
-                    "id" : "wandosqui1",
-                    "nombre" : "Family",
-                    "imagen" : "fammily01.jpg",
-                    "precio" : "1000,00",
-                    "descripcion" : "Consola de juegos para principiantes"
-                },
-                {
-                    "id" : "wandosqui2",
-                    "nombre" : "Sega",
-                    "imagen" : "sega01.jpg",
-                    "precio" : "2000,00",
-                    "descripcion" : "Consola de juegos para post-principiantes"
-                }
-            ],
-            "diversos" : [
-                {
-                    "id" : "diversoide",
-                    "nombre" : "Remera Space",
-                    "imagen" : "remera-space.jpg",
-                    "precio" : "58,99",
-                    "descripcion" : "Remera estampada color negro"
-                }
-            ]
-        }
-    ]
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "joeldario9912@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "email": "d2a2r2i2o@hotmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 3,
+      "email": "eli-martos@outlook.com",
+      "password": "1234"
+    }
+  ],
+  "productos": [
+    {
+      "id": "714d932a-8d77-4b30-af55-3f1e103a3c20",
+      "imagen": "C:\\fakepath\\IMG-20200320-WA0009.jpg",
+      "nombre": "Yo",
+      "precio": "34,00",
+      "descripcion": "a;se"
+    },
+    {
+      "id": "2453a65e-3389-4000-8af5-aa64adc3b8f5",
+      "imagen": "C:\\fakepath\\foto_curriculum.jpg",
+      "nombre": "Yo",
+      "precio": "34,00",
+      "descripcion": "a;se"
+    },
+    {
+      "id": "5f8a5d29-57bc-4179-b3d1-f7c7f78accf5",
+      "imagen": "C:\\fakepath\\IMG-20200320-WA0009.jpg",
+      "nombre": "Yo",
+      "precio": "34,00",
+      "descripcion": "a;se"
+    },
+    {
+      "id": "66ceb5ce-adc1-4ad1-a5ea-6074db5c8fd3",
+      "imagen": "C:\\fakepath\\IMG-20200320-WA0009.jpg",
+      "nombre": "Yo",
+      "precio": "34,00",
+      "descripcion": "a;se"
+    },
+    {
+      "id": "8995e07d-6660-4c8b-b60b-a7f514d650d5",
+      "imagen": "C:\\fakepath\\DNI dorso.JPG",
+      "nombre": "Dni",
+      "precio": "123,45",
+      "descripcion": "Identidad"
+    },
+    {
+      "id": "09a6878b-5bee-4f9d-a45a-8644d0717a5e",
+      "imagen": "C:\\fakepath\\IMG-20200320-WA0009.jpg",
+      "nombre": "Dni",
+      "precio": "123,45",
+      "descripcion": "Identidad"
+    },
+    {
+      "id": "0856b278-f9f4-45ec-8199-e7ef673a4fb1",
+      "imagen": "C:\\fakepath\\DNI frente.JPG",
+      "nombre": "Dni",
+      "precio": "123,45",
+      "descripcion": "Identidad"
+    },
+    {
+      "id": "3dc9929b-89d3-4788-9f39-b8d09e6697c9",
+      "imagen": "C:\\fakepath\\foto_curriculum.jpg",
+      "nombre": "Caripela",
+      "precio": "45654,78",
+      "descripcion": "Cara de groso"
+    },
+    {
+      "id": "b671b4e0-9394-40c6-aaaf-e489e0cde737",
+      "imagen": "C:\\fakepath\\foto_curriculum.jpg",
+      "nombre": "Face",
+      "precio": "45654,78",
+      "descripcion": "Cara de supergroso"
+    },
+    {
+      "id": "14f9fcf0-4abc-4249-b95d-fa4e97be052a",
+      "imagen": "C:\\fakepath\\DNI frente.JPG",
+      "nombre": "Dni frente",
+      "precio": "35,45",
+      "descripcion": "dni frente"
+    },
+    {
+      "id": "897ae080-e622-4914-83cc-8330d20a81f5",
+      "imagen": "C:\\fakepath\\IMG-20200320-WA0009.jpg",
+      "nombre": "Dni frente",
+      "precio": "35,45",
+      "descripcion": "frnsosqui"
+    }
+  ],
+  "starWars": [
+    {
+      "id": "wasosqui1",
+      "nombre": "Mouse inalambrico",
+      "imagen": "mouse.jpg",
+      "precio": "453,99",
+      "descripcion": "Ratón inalámbrico rapido y de bajo costo",
+      "codigo": "00AA11BB"
+    },
+    {
+      "id": "wasosqui2",
+      "nombre": "Teclado inalambrico",
+      "imagen": "teclado.jpg",
+      "precio": "1300,99",
+      "descripcion": "Teclado inalámbrico low profile",
+      "codigo": "01AA11BB"
+    }
+  ],
+  "consolas": [
+    {
+      "id": "wandosqui1",
+      "nombre": "Family",
+      "imagen": "fammily01.jpg",
+      "precio": "1000,00",
+      "descripcion": "Consola de juegos para principiantes"
+    },
+    {
+      "id": "wandosqui2",
+      "nombre": "Sega",
+      "imagen": "sega01.jpg",
+      "precio": "2000,00",
+      "descripcion": "Consola de juegos para post-principiantes"
+    }
+  ],
+  "diversos": [
+    {
+      "id": "diversoide",
+      "nombre": "Remera Space",
+      "imagen": "remera-space.jpg",
+      "precio": "58,99",
+      "descripcion": "Remera estampada color negro"
+    },
+    {
+      "id": "44732121-b557-4b30-b7b8-a12d28092cac",
+      "imagen": "C:\\fakepath\\chicaPose.jpeg",
+      "nombre": "Tania",
+      "precio": "234,56",
+      "descripcion": "Alta flaca",
+      "categoria": {
+        "0": {},
+        "1": {},
+        "2": {},
+        "3": {}
+      }
+    }
+  ]
 }
