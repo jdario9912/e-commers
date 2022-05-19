@@ -55,6 +55,13 @@ const validaAreaDescripcion = (areaDescripcion, alertDescripcion) => {
     }
 }
 
+const validaSelectCategoria = (selectCategoria, alertCategoria) => {
+    if (selectCategoria.validity.valueMissing) {
+        alertCategoria.removeAttribute('hidden');
+        alertCategoria.textContent = 'debes elegir una categoria';
+    }
+}
+
 const cargarImagenMovile = (archivo, imgResultanteMovile) => {
     const leerArchivo = new FileReader();
 
@@ -85,5 +92,6 @@ export const accionesAgregarProducto = {
     validaAreaDescripcion,
     cargarImagenMovile,
     cargarImagenTD,
-    validaInputImagen
+    validaInputImagen,
+    validaSelectCategoria
 }

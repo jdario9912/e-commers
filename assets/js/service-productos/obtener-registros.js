@@ -1,5 +1,5 @@
 // Este codigo es un ejemplo de como obtener datos de una API
-// Despues debe ser borrado
+// Despues de implementarlo en Alura Geek debe ser borrado
 
 const creaParrafo = (email) => {
     const parrafo = document.createElement('p');

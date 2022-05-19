@@ -142,12 +142,19 @@
                 </label>
                 <label for="categoria" class="label__inputs">
                     Seleccione una categoria
-                    <select name="categoria" id="categoria" class="agregar__select" data-agregar-select-categoria>
+                    <select 
+                        class="agregar__select" 
+                        data-agregar-select-categoria
+                        id="categoria" 
+                        name="categoria" 
+                        required
+                    >
                         <option value="">--</option>
                         <option value="starWars">Star Wars</option>
                         <option value="consolas">Consolas</option>
                         <option value="diversos">Diversos</option>
                     </select>
+                    <span class="validity" data-agregar-alert-categoria></span>
                 </label>
                 <button 
                     class="agregar__btn" 
@@ -156,7 +163,6 @@
                 >agregar producto</button>
             </form>
         </section>
-        <img id="imagenTest" src="" alt="">
     </main>
     <footer-component></footer-component>
     <script src="../assets/js/components/header.js"></script>
@@ -168,6 +174,7 @@
     <script src="../assets/js/controllers/formulario-agregar-producto/input-precio.js" type="module"></script>
     <script src="../assets/js/controllers/formulario-agregar-producto/input-descripcion.js" type="module"></script>
     <script src="../assets/js/controllers/formulario-agregar-producto/input-imagen.js" type="module"></script>
+    <script src="../assets/js/controllers/formulario-agregar-producto/input-categoria.js" type="module"></script>
     <!-- Esta linea es para conectar con la API que genera id -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../assets/js/controllers/agregar-producto/agregar-producto.js" type="module"></script>
