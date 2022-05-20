@@ -3,3 +3,8 @@
     min-width: 125px;
     width: 47%;
 }
+
+.producto:hover{
+    scale: 1.08;
+    box-shadow: 5px 5px 5px 0px #52808E;
+}

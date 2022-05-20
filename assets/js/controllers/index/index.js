@@ -1,8 +1,8 @@
 import { accionesProductos } from "../service-productos.js";
 
-const sectionStarWars = document.querySelector('[data-section-starWars]');
-const sectionConsolas = document.querySelector('[data-section-consolas]');
-const sectionDiversos = document.querySelector('[data-section-diversos]');
+const sectionStarWars      = document.querySelector('[data-section-starWars]');
+const sectionConsolas      = document.querySelector('[data-section-consolas]');
+const sectionDiversos      = document.querySelector('[data-section-diversos]');
 
 accionesProductos.obtenerProductosStarWars()
     .then((productos) => productos.forEach(({id, imagen, nombre, precio}) => {accionesProductos.generaProductoIndex(sectionStarWars, id, imagen, nombre, precio)}))

@@ -5,3 +5,8 @@
     margin-top: 16px;
     width: 48%;
 }
+
+.todos__producto:hover{
+    scale: 1.04;
+    box-shadow: 5px 5px 5px 0px #52808E;
+}

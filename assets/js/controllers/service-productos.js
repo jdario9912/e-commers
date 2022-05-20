@@ -10,17 +10,26 @@ const registrarProducto = (imagen, nombre, precio, descripcion, categoria) => {
     });
 }
 
+const eliminarProducto = (categoria, id) => {
+    return fetch(`http://localhost:3000/${categoria}/${id}`, {
+        method: 'DELETE',
+    })
+}
+
 const generaProductoIndex = (sectionProductos, id, imagen, nombre, precio) => {
+    const categoria = sectionProductos.parentElement.id;
     const divProducto = document.createElement('div');
     const informacionProducto = `
-        <img class="producto__imagen" src="${imagen}" alt="" srcset="">
-        <h3 class="producto__titulo">${nombre}</h3>
-        <p class="producto__precio">$${precio}</p>
-        <a href="#" class="producto__mas">ver producto</a>
+        <a href="./pages/productos-similares.html?id=${id}&categoria=${categoria}" class="producto__mas">
+            <img class="producto__imagen" src="${imagen}" alt="" srcset="">
+            <h3 class="producto__titulo">${nombre}</h3>
+            <p class="producto__precio">$${precio}</p>
+            ver producto
+        </a>
     `;
     divProducto.classList.add('producto');
-    divProducto.setAttribute('id', id)
-    divProducto.innerHTML = informacionProducto;
+    divProducto.setAttribute('id', id);
+    divProducto.innerHTML = informacionProducto;    
     sectionProductos.appendChild(divProducto);
 }
 
@@ -37,8 +46,27 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
         <p class="todos__codigo">#${id}</p>
     `;
     divProducto.classList.add('todos__producto');
+    divProducto.setAttribute('id', id);
     divProducto.innerHTML = informacionProducto;
     sectionProductos.appendChild(divProducto);
+}
+
+const obtieneProductos = (categoriaSeleccionada) => {
+    return fetch(`http://localhost:3000/${categoriaSeleccionada}`).then((respuesta) => respuesta.json());
+}
+
+const generaProductoSeleccionado = (imagen, nombre, precio, descripcion) => {
+    const divProductoSeleccionado = document.querySelector('[data-producto-seleccionado]');
+    const contenido = `
+        <img src="${imagen}" alt="" class="producto-seleccionado__imagen">
+        <div class="producto-seleccionado__textos">
+            <h2 class="producto-seleccionado__titulo">${nombre}</h2>
+            <p class="producto-seleccionado__precio">$${precio}</p>
+            <p class="producto-seleccionado__descripcion">${descripcion}.</p>
+        </div>
+    `;
+
+    divProductoSeleccionado.innerHTML = contenido;
 }
 
 const obtenerProductosConsolas = () => fetch('http://localhost:3000/consolas/').then((respuesta) => respuesta.json());
@@ -48,10 +76,13 @@ const obtenerTodosLosProductos = [ obtenerProductosDiversos(), obtenerProductosS
 
 export const accionesProductos = {
     registrarProducto,
+    eliminarProducto,
     generaProductoIndex,
     generaProductoTodos,
     obtenerProductosConsolas,
     obtenerProductosStarWars,
     obtenerProductosDiversos,
+    obtieneProductos,
+    generaProductoSeleccionado,
     obtenerTodosLosProductos
 };
