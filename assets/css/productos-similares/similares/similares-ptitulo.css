@@ -1,3 +1,4 @@
 .similares-producto__titulo{
+    color: var(--preto);
     font-size: 1.15rem;
 }

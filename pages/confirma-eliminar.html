@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto registrado</title>
+    <title>Eliminar producto</title>
     <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka:wght@500&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../assets/css/header/header-btn.css">
     <link rel="stylesheet" href="../assets/css/header/header-lupa.css">
     <!-- Aca empiezan los estilos para esta pagina -->
-    <link rel="stylesheet" href="../assets/css/producto-registrado/producto-registrado.css">
+    <link rel="stylesheet" href="../assets/css/confirma-eliminar/confirma-eliminar.css">
     <!-- Aca terminan los estilos para esta pagina -->
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/footer/footer-nosotros.css">
@@ -42,12 +42,17 @@
 
 </head>
 <body class="body">
-    <div class="producto-registrado__container">
-        <div class="producto-registrado__icono"></div>
-        <h1 class="producto-registrado__titulo">producto registrado!</h1>
-        <div class="producto-registrado__links">
-            <a class="producto-registrado__link" href="./todos.html">ver todos</a>
-            <a class="producto-registrado__link" href="./agregar-producto.html">agregar otro</a>
+    <div class="confirma-eliminar__container">
+        <div class="confirma-eliminar__icono"></div>
+        <h1 class="confirma-eliminar__titulo">borrar este producto?</h1>
+        <div class="confirma-eliminar__producto">
+            <!-- Aca va el producto a eliminar -->
+            <img src="../assets/img/todos/productos/bUgaIaZysH0.png" alt="" class="confirma-eliminar__imagen">
+            <h2 class="confirma-eliminar__nombre">Producto a Borrar</h2>
+        </div>
+        <div class="confirma-eliminar__links">
+            <a class="confirma-eliminar__link" href="./agregar-producto.html">confirmar</a>
+            <a class="confirma-eliminar__link" href="./todos.html">volver</a>
         </div>
     </div>
 </body>

@@ -51,6 +51,23 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
     sectionProductos.appendChild(divProducto);
 }
 
+const generaProductosSimilares = (seccionProductosSimilares, id, imagen, nombre, precio) => {
+    const divProducto = document.createElement('div');
+    const informacionProducto = `
+        <a href="productos-similares.html?id=${id}&categoria=${categoriaSeleccionada}" class="similares-producto__mas">
+            <img class="similares-producto__imagen" src="${imagen}" alt="" srcset="">
+            <h3 class="similares-producto__titulo">${nombre}</h3>
+            <p class="similares-producto__precio">$${precio}</p>
+            ver producto
+        </a>
+    `;
+
+    divProducto.classList.add('similares-producto');
+    divProducto.setAttribute('id', id);
+    divProducto.innerHTML = informacionProducto;
+    seccionProductosSimilares.appendChild(divProducto);
+}
+
 const obtieneProductos = (categoriaSeleccionada) => {
     return fetch(`http://localhost:3000/${categoriaSeleccionada}`).then((respuesta) => respuesta.json());
 }
@@ -79,10 +96,11 @@ export const accionesProductos = {
     eliminarProducto,
     generaProductoIndex,
     generaProductoTodos,
+    generaProductoSeleccionado,
+    generaProductosSimilares,
     obtenerProductosConsolas,
     obtenerProductosStarWars,
     obtenerProductosDiversos,
     obtieneProductos,
-    generaProductoSeleccionado,
     obtenerTodosLosProductos
 };

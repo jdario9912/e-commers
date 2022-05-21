@@ -3,3 +3,8 @@
     max-width: 330px;
     width: 45%;
 }
+
+.similares-producto:hover{
+    scale: 1.08;
+    box-shadow: 5px 5px 5px 0px #52808E;
+}

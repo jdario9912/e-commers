@@ -1,0 +1,55 @@
+.confirma-eliminar__container{
+    align-items: center;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 50px auto auto auto;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 3rem 1rem;
+}
+
+.confirma-eliminar__icono{
+    background: url(../../img/confirma-eliminar/confirma-eliminar.png) no-repeat center / cover;
+    height: 40px;
+    width: 40px;
+}
+
+.confirma-eliminar__titulo{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.confirma-eliminar__producto{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.confirma-eliminar__imagen{
+    height: 70px;
+    width: 70px;
+}
+
+.confirma-eliminar__links{
+    align-items: center;
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.confirma-eliminar__link{
+    font-size: 1.2rem;
+    color: var(--azul100);
+    padding: .7rem 1rem;
+}
+.confirma-eliminar__link:nth-child(1):hover{
+    border: 1px solid red;
+    color: red;
+}
+.confirma-eliminar__link:nth-child(2):hover{
+    background-color: var(--azul100);
+    color: var(--blanco);
+} 
