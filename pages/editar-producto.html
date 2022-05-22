@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>
+    <link rel="shortcut icon" href="../assets/img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka:wght@500&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Dosis&family=Fredoka:wght@500;700&family=Gideon+Roman&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Pacifico&family=Prompt:ital,wght@1,200&family=Raleway:wght@400;500;600;700&family=Righteous&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/normalice.css">
+    <!-- Aca empiezan los estilos para esta pagina -->
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-titulo.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-formulario.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-contenedor-imagen.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-it.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-imagen.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-input-imagen.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-resultante.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-contenedor-imagen-td.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-it.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-icono.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-label.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-input.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-imagen-td-resultante.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-inputs.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-input-nombre-precio.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-label-descripcion.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-descripcion.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-select.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-alert.css">
+    <link rel="stylesheet" href="../assets/css/agregar-producto/agregar-btn.css">
+    <link rel="stylesheet" href="../assets/css/editar-producto/editar-producto.css">
+    <!-- Aca terminan los estilos para esta pagina -->
+    <link rel="stylesheet" href="../assets/css/responsive-movile.css">
+    <link rel="stylesheet" href="../assets/css/responsive-tablet.css">
+    <link rel="stylesheet" href="../assets/css/responsive-desktops.css">
+    <!-- Responsividad de esta pagina -->
+
+</head>
+<body class="body editar-producto__body">
+    <main>
+        <h2 class="agregar__titulo">Editar Producto</h2>
+            <form action="" class="agregar__formulario" data-formulario-agregar-producto>
+                <div class="agregar__contenedor-imagen" data-agregar-zonadrag-movile>
+                    <div class="agregar__imagen--it">
+                        <label for="agregar__imagen" class="agregar__label-imagen">
+                            <span class="agregar__icono-mas">➕</span>
+                            Agregar una imagen para el producto
+                        </label>
+                        <input 
+                            type="file" 
+                            class="agregar__input-imagen" 
+                            data-agregar-imagen
+                            id="agregar__imagen" 
+                            accept=".jpg, .jpeg, .png"
+                            required
+                        >
+                    </div>
+                    <img class="agregar__imagen--resultante" src="" alt="" data-agregar-imagen-resultante>
+                </div>
+
+                <div class="agregar__contenedor-imagen-td">
+                    <div class="agregar__imagen-td" data-agregar-imagen-td-zona>
+                        <div class="agregar__imagen-td--it">
+                            <div class="agregar__imagen-td--icono"></div>
+                            <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                        </div>
+                        <img class="agregar__imagen-td--resultante" src="" alt="" data-agregar-imagen-td-resultante>
+                    </div>
+                    O
+                    <label for="agregar__imagen" class="agregar__imagen-td--label">
+                        Buscar en dispositivo
+                    </label>
+                </div>
+                <span class="validity" data-agregar-alert-imagen></span>
+
+                <label for="nombre" class="label__inputs">
+                    Nombre del producto
+                    <input 
+                        type="text" 
+                        class="agregar__input-nombre"
+                        data-agregar-nombre
+                        id="nombre"
+                        maxlength="24"
+                        required
+                        placeholder="nombre del producto"
+                    >
+                    <span class="validity" data-agregar-alert-nombre></span>
+                </label>
+                <label for="precio" class="label__inputs">
+                    Precio del producto
+                    <input 
+                        class="agregar__input-precio"
+                        data-agregar-precio
+                        min="0"
+                        pattern="\d{1,},\d{2}"
+                        placeholder="$00,00"
+                        required
+                        type="text" 
+                    >
+                    <span class="validity" data-agregar-alert-precio></span>
+                </label>
+                <label for="descripcion" class="label__descripcion">
+                    Descripción del producto
+                    <textarea 
+                        class="agregar__descripcion"
+                        cols="30" 
+                        data-agregar-descripcion
+                        id="descripcion" 
+                        name="descripcion" 
+                        required
+                        rows="10" 
+                    ></textarea>
+                    <span class="validity" data-agregar-alert-descripcion></span>
+                </label>
+                <label for="categoria" class="label__inputs">
+                    Seleccione una categoria
+                    <select 
+                        class="agregar__select" 
+                        data-agregar-select-categoria
+                        id="categoria" 
+                        name="categoria" 
+                        required
+                    >
+                        <option value="">--</option>
+                        <option value="starWars">Star Wars</option>
+                        <option value="consolas">Consolas</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                    <span class="validity" data-agregar-alert-categoria></span>
+                </label>
+                <button 
+                    class="agregar__btn" 
+                    data-agregar-btn
+                    type="submit"
+                >agregar producto</button>
+            </form>
+    </main> 
+    <script src="../assets/js/controllers/editar-producto/editar-producto.js" type="module"></script>   
+</body>
+</html>

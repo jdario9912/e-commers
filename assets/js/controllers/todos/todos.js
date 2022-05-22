@@ -9,4 +9,4 @@ todasLasCategorias.forEach(categoria => {
         .catch((error) => {console.log(error);})
 });
 
-// ME FALTA DARLE FUNCIONALIDAD AL BOTON DE ELIMINAR Y EDITAR
+// ME FALTA DARLE FUNCIONALIDAD AL BOTON DE ELIMINAR, EDITAR Y MOSTRAR PRODUCTO SELECCIONADO

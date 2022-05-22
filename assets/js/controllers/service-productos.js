@@ -35,16 +35,18 @@ const generaProductoIndex = (sectionProductos, id, imagen, nombre, precio) => {
 
 const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
     const divProducto = document.createElement('div');
-    const informacionProducto = `
-        <div class="todos__grafica">
-            <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
-            <div class="todos__icono-editar" id="${id}" data-icono-editar></div>
-            <img src="${imagen}" alt="" class="todos__imagen">
-        </div>
-        <h3 class="todos__titulo">${nombre}</h3>
-        <p class="todos__precio">$${precio}</p>
-        <p class="todos__codigo">#${id}</p>
-    `;
+        const informacionProducto = `
+            <div class="todos__grafica">
+                <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
+                <div class="todos__icono-editar" id="${id}" data-icono-editar></div>
+                <a href="productos-similares.html" class="similares-producto__mas">
+                    <img src="${imagen}" alt="" class="todos__imagen">
+                </a>
+            </div>
+            <h3 class="todos__titulo">${nombre}</h3>
+            <p class="todos__precio">$${precio}</p>
+            <p class="todos__codigo">#${id}</p>
+        `;
     divProducto.classList.add('todos__producto');
     divProducto.setAttribute('id', id);
     divProducto.innerHTML = informacionProducto;
