@@ -37,11 +37,13 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
     const divProducto = document.createElement('div');
         const informacionProducto = `
             <div class="todos__grafica">
-                <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
-                <div class="todos__icono-editar" id="${id}" data-icono-editar></div>
-                <a href="productos-similares.html" class="similares-producto__mas">
-                    <img src="${imagen}" alt="" class="todos__imagen">
+                <a href="confirma-eliminar.html?id=${id}">
+                    <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
                 </a>
+                <a href="editar-producto.html?id=${id}">
+                    <div class="todos__icono-editar" id="${id}" data-icono-editar></div>
+                </a>
+                <img src="${imagen}" alt="" class="todos__imagen">
             </div>
             <h3 class="todos__titulo">${nombre}</h3>
             <p class="todos__precio">$${precio}</p>
@@ -53,7 +55,7 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
     sectionProductos.appendChild(divProducto);
 }
 
-const generaProductosSimilares = (seccionProductosSimilares, id, imagen, nombre, precio) => {
+const generaProductosSimilares = (categoriaSeleccionada, seccionProductosSimilares, id, imagen, nombre, precio) => {
     const divProducto = document.createElement('div');
     const informacionProducto = `
         <a href="productos-similares.html?id=${id}&categoria=${categoriaSeleccionada}" class="similares-producto__mas">
@@ -88,6 +90,18 @@ const generaProductoSeleccionado = (imagen, nombre, precio, descripcion) => {
     divProductoSeleccionado.innerHTML = contenido;
 }
 
+const cargarImagenMovile = (archivo, imgResultanteMovile) => {
+    const leerArchivo = new FileReader();
+
+    // devuelve la ruta donde esta el archivo que se esta cargando
+    leerArchivo.readAsDataURL(archivo);
+
+    // la ruta obtenida es cargada en el atributo 'src' de la etiqueta 'img'
+    leerArchivo.addEventListener('load', (event) => {
+        imgResultanteMovile.setAttribute('src', event.target.result);
+    });
+}
+
 const obtenerProductosConsolas = () => fetch('http://localhost:3000/consolas/').then((respuesta) => respuesta.json());
 const obtenerProductosStarWars = () => fetch('http://localhost:3000/starWars/').then((respuesta) => respuesta.json());
 const obtenerProductosDiversos = () => fetch('http://localhost:3000/diversos/').then((respuesta) => respuesta.json());
@@ -99,6 +113,7 @@ export const accionesProductos = {
     generaProductoIndex,
     generaProductoTodos,
     generaProductoSeleccionado,
+    cargarImagenMovile,
     generaProductosSimilares,
     obtenerProductosConsolas,
     obtenerProductosStarWars,

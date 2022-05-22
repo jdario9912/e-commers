@@ -45,8 +45,8 @@
 <body class="body editar-producto__body">
     <main>
         <h2 class="agregar__titulo">Editar Producto</h2>
-            <form action="" class="agregar__formulario" data-formulario-agregar-producto>
-                <div class="agregar__contenedor-imagen" data-agregar-zonadrag-movile>
+            <form action="" class="agregar__formulario" data-formulario-editar-producto>
+                <div class="agregar__contenedor-imagen" data-editar-zonadrag-movile>
                     <div class="agregar__imagen--it">
                         <label for="agregar__imagen" class="agregar__label-imagen">
                             <span class="agregar__icono-mas">➕</span>
@@ -55,91 +55,76 @@
                         <input 
                             type="file" 
                             class="agregar__input-imagen" 
-                            data-agregar-imagen
+                            data-editar-imagen
                             id="agregar__imagen" 
                             accept=".jpg, .jpeg, .png"
                             required
                         >
                     </div>
-                    <img class="agregar__imagen--resultante" src="" alt="" data-agregar-imagen-resultante>
+                    <img class="agregar__imagen--resultante" src="" alt="" data-editar-imagen-resultante>
                 </div>
 
                 <div class="agregar__contenedor-imagen-td">
-                    <div class="agregar__imagen-td" data-agregar-imagen-td-zona>
+                    <div class="agregar__imagen-td" data-editar-imagen-td-zona>
                         <div class="agregar__imagen-td--it">
                             <div class="agregar__imagen-td--icono"></div>
-                            <p class="agregar__imagen-td--texto">Arrastra para agregar una imagen al producto</p>
+                            <p class="agregar__imagen-td--texto">Arrastra para editar una imagen al producto</p>
                         </div>
-                        <img class="agregar__imagen-td--resultante" src="" alt="" data-agregar-imagen-td-resultante>
+                        <img class="agregar__imagen-td--resultante" src="" alt="" data-editar-imagen-td-resultante>
                     </div>
                     O
                     <label for="agregar__imagen" class="agregar__imagen-td--label">
                         Buscar en dispositivo
                     </label>
                 </div>
-                <span class="validity" data-agregar-alert-imagen></span>
+                <span class="validity" data-editar-alert-imagen></span>
 
                 <label for="nombre" class="label__inputs">
                     Nombre del producto
                     <input 
                         type="text" 
                         class="agregar__input-nombre"
-                        data-agregar-nombre
+                        data-editar-nombre
                         id="nombre"
                         maxlength="24"
                         required
                         placeholder="nombre del producto"
                     >
-                    <span class="validity" data-agregar-alert-nombre></span>
+                    <span class="validity" data-editar-alert-nombre></span>
                 </label>
                 <label for="precio" class="label__inputs">
                     Precio del producto
                     <input 
                         class="agregar__input-precio"
-                        data-agregar-precio
+                        data-editar-precio
                         min="0"
                         pattern="\d{1,},\d{2}"
                         placeholder="$00,00"
                         required
                         type="text" 
                     >
-                    <span class="validity" data-agregar-alert-precio></span>
+                    <span class="validity" data-editar-alert-precio></span>
                 </label>
                 <label for="descripcion" class="label__descripcion">
                     Descripción del producto
                     <textarea 
                         class="agregar__descripcion"
                         cols="30" 
-                        data-agregar-descripcion
+                        data-editar-descripcion
                         id="descripcion" 
                         name="descripcion" 
                         required
                         rows="10" 
                     ></textarea>
-                    <span class="validity" data-agregar-alert-descripcion></span>
-                </label>
-                <label for="categoria" class="label__inputs">
-                    Seleccione una categoria
-                    <select 
-                        class="agregar__select" 
-                        data-agregar-select-categoria
-                        id="categoria" 
-                        name="categoria" 
-                        required
-                    >
-                        <option value="">--</option>
-                        <option value="starWars">Star Wars</option>
-                        <option value="consolas">Consolas</option>
-                        <option value="diversos">Diversos</option>
-                    </select>
-                    <span class="validity" data-agregar-alert-categoria></span>
+                    <span class="validity" data-editar-alert-descripcion></span>
                 </label>
                 <button 
                     class="agregar__btn" 
-                    data-agregar-btn
+                    data-editar-btn
                     type="submit"
-                >agregar producto</button>
+                >confirmar cambios</button>
             </form>
+            <a href="todos.html">Cancelar</a>
     </main> 
     <script src="../assets/js/controllers/editar-producto/editar-producto.js" type="module"></script>   
 </body>

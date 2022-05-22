@@ -17,7 +17,6 @@ accionesProductos.obtieneProductos(categoriaSeleccionada)
 
 accionesProductos.obtieneProductos(categoriaSeleccionada)
     .then((productos) => {
-        console.log(productos);
         for (let i = 0; i < 4; i++) {
             const producto = productos[i];
             if (producto) {
@@ -25,7 +24,7 @@ accionesProductos.obtieneProductos(categoriaSeleccionada)
                 const imagen = producto.imagen;
                 const nombre = producto.nombre;
                 const precio = producto.precio;
-                accionesProductos.generaProductosSimilares(seccionProductosSimilares, id, imagen, nombre, precio);
+                accionesProductos.generaProductosSimilares(categoriaSeleccionada, seccionProductosSimilares, id, imagen, nombre, precio);
             }
         }
     })
