@@ -12,8 +12,8 @@ const registrarProducto = (imagen, nombre, precio, descripcion, categoria) => {
 
 const eliminarProducto = (categoria, id) => {
     return fetch(`http://localhost:3000/${categoria}/${id}`, {
-        method: 'DELETE',
-    })
+        method: "DELETE",
+    });
 }
 
 const generaProductoIndex = (sectionProductos, id, imagen, nombre, precio) => {
@@ -37,7 +37,7 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio, categ
     const divProducto = document.createElement('div');
         const informacionProducto = `
             <div class="todos__grafica">
-                <a href="confirma-eliminar.html?id=${id}&categoria=${categoria}">
+                <a href="confirma-eliminar.html?categoria=${categoria}&id=${id}">
                     <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
                 </a>
                 <a href="editar-producto.html?id=${id}">
@@ -75,6 +75,11 @@ const generaProductosSimilares = (categoriaSeleccionada, seccionProductosSimilar
 
 const obtieneProductos = (categoriaSeleccionada) => {
     return fetch(`http://localhost:3000/${categoriaSeleccionada}`).then((respuesta) => respuesta.json());
+}
+
+const obtieneProducto = (categoria, id) => {
+    return fetch(`http://localhost:3000/${categoria}/${id}`)
+        .then(respuesta => respuesta.json())
 }
 
 const generaProductoSeleccionado = (imagen, nombre, precio, descripcion) => {
@@ -120,5 +125,6 @@ export const accionesProductos = {
     obtenerProductosStarWars,
     obtenerProductosDiversos,
     obtieneProductos,
+    obtieneProducto,
     obtenerTodosLosProductos
 };

@@ -44,17 +44,15 @@
 <body class="body">
     <div class="confirma-eliminar__container">
         <div class="confirma-eliminar__icono"></div>
-        <h1 class="confirma-eliminar__titulo">borrar este producto?</h1>
-        <div class="confirma-eliminar__producto">
-            <!-- Aca va el producto a eliminar -->
-            <img src="../assets/img/todos/productos/bUgaIaZysH0.png" alt="" class="confirma-eliminar__imagen">
-            <h2 class="confirma-eliminar__nombre">Producto a Borrar</h2>
-        </div>
-        <div class="confirma-eliminar__links">
-            <a class="confirma-eliminar__link" href="./agregar-producto.html">confirmar</a>
-            <a class="confirma-eliminar__link" href="./todos.html">volver</a>
-        </div>
+            <h1 class="confirma-eliminar__titulo">borrar este producto?</h1>
+            <div class="confirma-eliminar__producto" data-container-producto-a-eliminar>
+                <!-- Aca va el producto a eliminar -->
+            </div>
+            <div class="confirma-eliminar__links">
+                <div class="confirma-eliminar__btn" data-btn-eliminar>confirmar</div>
+                <a class="confirma-eliminar__btn" href="./todos.html">volver</a>
+            </div>
     </div>
-    <script src="../assets/js/controllers/confirma-eliminar/confirma-eliminar.js"></script>
+    <script src="../assets/js/controllers/confirma-eliminar/confirma-eliminar.js" type="module"></script>
 </body>
 </html>

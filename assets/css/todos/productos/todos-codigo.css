@@ -1,3 +1,4 @@
 .todos__codigo{
     font-size: .75rem;
+    overflow: hidden;
 }

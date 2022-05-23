@@ -40,16 +40,17 @@
     gap: 1rem;
 }
 
-.confirma-eliminar__link{
+.confirma-eliminar__btn{
     font-size: 1.2rem;
     color: var(--azul100);
     padding: .7rem 1rem;
 }
-.confirma-eliminar__link:nth-child(1):hover{
+.confirma-eliminar__btn:nth-child(1):hover{
     border: 1px solid red;
     color: red;
+    cursor: pointer;
 }
-.confirma-eliminar__link:nth-child(2):hover{
+.confirma-eliminar__btn:nth-child(2):hover{
     background-color: var(--azul100);
     color: var(--blanco);
 } 

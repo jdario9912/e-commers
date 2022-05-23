@@ -1,4 +1,4 @@
-.producto-registrado__container{
+.producto-eliminado__container{
     align-items: center;
     background-color: var(--blanco);
     display: flex;
@@ -11,27 +11,27 @@
     padding: 3rem;
 }
 
-.producto-registrado__icono{
+.producto-eliminado__icono{
     background: url(../../img/producto-registrado/producto-registrado-icono.png) no-repeat center / cover;
     height: 40px;
     width: 40px;
 }
 
-.producto-registrado__titulo{
+.producto-eliminado__titulo{
     font-size: 2rem;
     font-weight: 600;
 }
 
-.producto-registrado__links{
+.producto-eliminado__links{
     display: inherit;
     gap: 1rem;
 }
 
-.producto-registrado__link{
+.producto-eliminado__link{
     font-size: 1.2rem;
     color: var(--azul100);
     padding: .7rem 1rem;
 }  
-.producto-registrado__link:hover{
+.producto-eliminado__link:hover{
     border: 1px solid var(--azul100);
 } 
