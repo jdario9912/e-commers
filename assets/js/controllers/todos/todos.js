@@ -5,7 +5,7 @@ const todasLasCategorias = accionesProductos.obtenerTodosLosProductos;
 
 todasLasCategorias.forEach(categoria => {
     categoria
-        .then((productos) => productos.forEach(({id, imagen, nombre, precio}) => {accionesProductos.generaProductoTodos(sectionProductos, id, imagen, nombre, precio)}))
+        .then((productos) => productos.forEach(({id, imagen, nombre, precio, categoria}) => {accionesProductos.generaProductoTodos(sectionProductos, id, imagen, nombre, precio, categoria)}))
         .catch((error) => {console.log(error);})
 });
 

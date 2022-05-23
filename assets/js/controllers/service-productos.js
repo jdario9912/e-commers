@@ -6,7 +6,7 @@ const registrarProducto = (imagen, nombre, precio, descripcion, categoria) => {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({id: uuid.v4(), imagen, nombre, precio, descripcion})
+        body: JSON.stringify({id: uuid.v4(), imagen, nombre, precio, descripcion, categoria})
     });
 }
 
@@ -33,11 +33,11 @@ const generaProductoIndex = (sectionProductos, id, imagen, nombre, precio) => {
     sectionProductos.appendChild(divProducto);
 }
 
-const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
+const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio, categoria) => {
     const divProducto = document.createElement('div');
         const informacionProducto = `
             <div class="todos__grafica">
-                <a href="confirma-eliminar.html?id=${id}">
+                <a href="confirma-eliminar.html?id=${id}&categoria=${categoria}">
                     <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
                 </a>
                 <a href="editar-producto.html?id=${id}">
@@ -51,6 +51,7 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio) => {
         `;
     divProducto.classList.add('todos__producto');
     divProducto.setAttribute('id', id);
+    divProducto.setAttribute('data', categoria);
     divProducto.innerHTML = informacionProducto;
     sectionProductos.appendChild(divProducto);
 }

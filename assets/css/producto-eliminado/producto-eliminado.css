@@ -1,0 +1,37 @@
+.producto-registrado__container{
+    align-items: center;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin: 50px auto auto auto;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 3rem;
+}
+
+.producto-registrado__icono{
+    background: url(../../img/producto-registrado/producto-registrado-icono.png) no-repeat center / cover;
+    height: 40px;
+    width: 40px;
+}
+
+.producto-registrado__titulo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.producto-registrado__links{
+    display: inherit;
+    gap: 1rem;
+}
+
+.producto-registrado__link{
+    font-size: 1.2rem;
+    color: var(--azul100);
+    padding: .7rem 1rem;
+}  
+.producto-registrado__link:hover{
+    border: 1px solid var(--azul100);
+} 
