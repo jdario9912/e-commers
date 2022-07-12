@@ -2,7 +2,7 @@
 
 const registrarProducto = (imagen, nombre, precio, descripcion, categoria) => {
     return fetch(`http://localhost:3000/${categoria}`, {
-        method: 'POST',
+        method: "POST",
         headers: {
             'Content-Type': 'application/json'
         },
@@ -14,6 +14,17 @@ const eliminarProducto = (categoria, id) => {
     return fetch(`http://localhost:3000/${categoria}/${id}`, {
         method: "DELETE",
     });
+}
+
+const editaProducto = (categoria, id, imagen, nombre, precio, descripcion) => {
+    return fetch(`http://localhost:3000/${categoria}/${id}`, {
+        method: "PUT",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({imagen, nombre, precio, descripcion, categoria})
+    }).then(respuesta => console.log(respuesta))
+    .catch( error => console.log(error))
 }
 
 const generaProductoIndex = (sectionProductos, id, imagen, nombre, precio) => {
@@ -40,7 +51,7 @@ const generaProductoTodos = (sectionProductos, id, imagen, nombre, precio, categ
                 <a href="confirma-eliminar.html?categoria=${categoria}&id=${id}">
                     <div class="todos__icono-eliminar" id="${id}" data-icono-eliminar></div>
                 </a>
-                <a href="editar-producto.html?id=${id}">
+                <a href="editar-producto.html?categoria=${categoria}&id=${id}">
                     <div class="todos__icono-editar" id="${id}" data-icono-editar></div>
                 </a>
                 <img src="${imagen}" alt="" class="todos__imagen">
@@ -116,6 +127,7 @@ const obtenerTodosLosProductos = [ obtenerProductosDiversos(), obtenerProductosS
 export const accionesProductos = {
     registrarProducto,
     eliminarProducto,
+    editaProducto,
     generaProductoIndex,
     generaProductoTodos,
     generaProductoSeleccionado,

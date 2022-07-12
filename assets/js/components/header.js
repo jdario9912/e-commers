@@ -18,6 +18,7 @@ class Header extends HTMLElement {
                     <button class="header__btn" hidden></button>
                 </form>
                 <div class="header__lupa"></div>
+                <input type="search" class="" id="" data-input-search>
             </header>
         `;
     }
